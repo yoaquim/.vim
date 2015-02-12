@@ -47,7 +47,7 @@ ln -s ~/.vim/vimrc ~/.vimrc
 * Show command status at bottom
 * Enable line numbers
 * Enable incremental search (search matches as you type)
-* Enable Vim ruler (info about current line)
+* Enable Vim ruler (info on current line)
 
 ###Plugins###
 
