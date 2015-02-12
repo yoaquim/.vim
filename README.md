@@ -28,7 +28,8 @@ echo $PATH
 ###Installation###
 
 ```Shell
-git clone https://github.com/yoaquim/.vim.git ~/
+cd ~/
+git clone https://github.com/yoaquim/.vim.git
 ```
 
 Afterwards, you're gonna wanna syslink the `vimrc` file to your actual `~/.vimrc`:
