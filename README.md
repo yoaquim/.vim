@@ -71,7 +71,7 @@ ln -s ~/.vim/vimrc ~/.vimrc
 
 * [Mango][21]
 * [Solarize][20]
-* [Molokai][22](Monokai port)
+* [Molokai][22] (Monokai port)
 
 ###Some Shortcuts...###
 
