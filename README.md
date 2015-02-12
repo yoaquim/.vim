@@ -28,16 +28,27 @@ echo $PATH
 ###Installation###
 
 ```Shell
-cd ~/
-git clone https://github.com/yoaquim/.vim.git
+git clone https://github.com/yoaquim/.vim.git ~/
 ```
 
-Afterwards, you're gonna wanna syslink the `vimrc` file to your actual `~/.vimrc`:
+You're gonna wanna syslink the `vimrc` file to your actual `~/.vimrc`:
 			
 ```Shell
 ln -s ~/.vim/vimrc ~/.vimrc
 ```
 
+Now you need to initialize and update the plugins, which are git submodules:
+
+```Shell
+cd ~/.vim
+git submodule update --init
+```
+
+If you ever need to update the plugin modules, just do:
+
+```Shell
+git submodule foreach git pull origin master
+```
 ###Settings###
 
 * Load plugin files for file types
