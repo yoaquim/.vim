@@ -28,7 +28,7 @@ echo $PATH
 ###Installation###
 
 ```Shell
-git clone https://github.com/yoaquim/vim-config.git ~/.vim
+git clone https://github.com/yoaquim/.vim.git ~/
 ```
 
 Afterwards, you're gonna wanna syslink the `vimrc` file to your actual `~/.vimrc`:
@@ -47,7 +47,7 @@ ln -s ~/.vim/vimrc ~/.vimrc
 * Show command status at bottom
 * Enable line numbers
 * Enable incremental search (search matches as you type)
-* Enable Vim ruler (info on current line)
+* Enable Vim ruler (info on current line at bottom of screen) 
 
 ###Plugins###
 
