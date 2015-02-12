@@ -16,6 +16,9 @@
 		set mouse=a
 	endif
 
+	"set backspace to work all-around
+	set backspace=indent,eol,start
+
 	"show command status
 	set showcmd
 	

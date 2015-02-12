@@ -1,8 +1,10 @@
 #Custom Vim Config#
 
+###Intro###
+
 This vim configuartion is based off of amix's [Ultimate vimrc][1].
 
-Used a some stuff from [here][90] too.
+Used some stuff from [here][90] too.
 
 I mostly customized it for Javascript development.
 
@@ -10,15 +12,37 @@ I use Adobe's [Source Code Pro][4] font.
 
 You're gonna need [npm][2] (comes bundled with [Node.js][2]) for some plugins.
 
-I use [Homebrew][3]'s vim: `brew install vim`, and make sure your `usr/local/bin` directory
-is before your `usr/bin` in your `$PATH`: `usr/local/bin:/usr/bin`.
+I use [Homebrew][3]'s vim: 
 
+```Shell
+brew install vim
+```
+
+Make sure your `usr/local/bin` is before your `usr/bin` in your local `$PATH`:
+
+```Shell
+export PATH="/usr/local/bin:$PATH"
+echo $PATH
+```
+
+###Installation###
+
+```Shell
+git clone https://github.com/yoaquim/vim-config.git ~/.vim
+```
+
+Afterwards, you're gonna wanna syslink the `vimrc` file to your actual `~/.vimrc`:
+			
+```Shell
+ln -s ~/.vim/vimrc ~/.vimrc
+```
 
 ###Settings###
 
 * Load plugin files for file types
 * Load indent files for file types
 * Syntax Highlighting on
+* Set `backspace` to act as expected
 * Enable mouse (if available)
 * Show command status at bottom
 * Enable line numbers
