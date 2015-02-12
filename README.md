@@ -69,13 +69,13 @@ ln -s ~/.vim/vimrc ~/.vimrc
 
 ###Color Schemes###
 
-* Mango
-* Solarize
-* Monokai
+* [Mango][21]
+* [Solarize][20]
+* [Molokai][22](Monokai port)
 
 ###Some Shortcuts...###
 
-* Spell checking
+* Spell checking 
 * Wrap selection in brackets, parenthesis, etc.
 * Easier window navigation
 * Shortcuts for plugins
@@ -99,4 +99,7 @@ ln -s ~/.vim/vimrc ~/.vimrc
 [17]:https://github.com/scrooloose/nerdtree
 [18]:https://github.com/kien/ctrlp.vim
 [19]:https://github.com/moll/vim-node
+[20]:http://ethanschoonover.com/solarized/vim-colors-solarized
+[21]:https://github.com/goatslacker/mango.vim
+[22]://github.com/tomasr/molokai
 [90]:https://github.com/joyent/node/wiki/Vim-Plugins
