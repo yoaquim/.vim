@@ -27,6 +27,8 @@ echo $PATH
 
 ###Installation###
 
+To install:
+
 ```Shell
 git clone https://github.com/yoaquim/.vim.git ~/
 ```
