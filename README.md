@@ -8,7 +8,7 @@ Used some stuff from [here][90] too.
 
 I mostly customized it for Javascript development.
 
-I use Adobe's [Source Code Pro][4] font.
+I use Adobe's free [Source Code Pro][4] font.
 
 You're gonna need [npm][2] (comes bundled with [Node.js][2]) for some plugins.
 
