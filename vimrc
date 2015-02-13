@@ -82,13 +82,11 @@
 
 	"MANGO (off)
 	"------------
-	"syntax highlighting
 	"set background=dark   
 	"colorscheme mango
 
 	"SOLARIZED (off)
 	"---------
-	" syntax enable
 	" set background=dark
 	" let g:solarized_termcolors=256
 	" colorscheme solarized
