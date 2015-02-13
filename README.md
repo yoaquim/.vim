@@ -30,7 +30,7 @@ echo $PATH
 To install:
 
 ```Shell
-git clone https://github.com/yoaquim/.vim.git ~/
+git clone https://github.com/yoaquim/.vim.git ~/.vim
 ```
 
 You're gonna wanna syslink the `vimrc` file to your actual `~/.vimrc`:
