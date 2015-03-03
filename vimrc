@@ -1,7 +1,7 @@
 "============
 "VIM SETTINGS
 "===========
-
+"
 	"pathogen package manager
 	execute pathogen#infect()
 
@@ -10,6 +10,15 @@
 
 	"syntax highlighting on
 	syntax on
+
+	"set fold method (code block collapse) to syntax (language specific)
+	set foldmethod=manual
+	"press space to toggle foldingl if no fold, default behavior
+	nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
+	vnoremap <Space> zf
+
+"[OFF]	"set vim-javascript-syntax plugin folding (foldmethod must be set to syntax) 
+	"au FileType javascript call JavaScriptFold()
 
 	"enable mouse
 	if has('mouse')
@@ -80,12 +89,12 @@
 	"-------------
 	colorscheme monokai
 
-	"MANGO (off)
+"[OFF]	"MANGO 
 	"------------
 	"set background=dark   
 	"colorscheme mango
 
-	"SOLARIZED (off)
+"[OFF]	"SOLARIZED 
 	"---------
 	" set background=dark
 	" let g:solarized_termcolors=256
