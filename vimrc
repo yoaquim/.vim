@@ -17,9 +17,6 @@
 	nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
 	vnoremap <Space> zf
 
-"[OFF]	"set vim-javascript-syntax plugin folding (foldmethod must be set to syntax) 
-	"au FileType javascript call JavaScriptFold()
-
 	"enable mouse
 	if has('mouse')
 		set mouse=a
