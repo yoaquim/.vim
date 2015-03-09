@@ -1,7 +1,7 @@
 "============
 "VIM SETTINGS
-"===========
-"
+"============
+
 	"pathogen package manager
 	execute pathogen#infect()
 
