@@ -77,7 +77,6 @@
 	"Limelight Shortcut
 	nnoremap <silent><leader>z :Limeligh!!<cr>
 
-
 "============
 "COLOR SCHEMES
 "============
