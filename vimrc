@@ -37,6 +37,14 @@
 	"set incremental search
 	set incsearch
 
+"[MAC]	"map Alt+j, Alt+k to move up/down 10 lines nnoremap ∆ 10j
+	nnoremap ∆ 10j
+	nnoremap ˚ 10k
+
+"[MAC]	"map Shift+Alt+j, Shift+Alt+k to move up/down 20 lines
+	nnoremap Ô 25j
+	nnoremap  25k
+
 	"set '\h' to toggle search highlight
 	let hlstate=0
 	nnoremap <leader>h :if (hlstate == 0) \| nohlsearch \| else \| set hlsearch \| endif \| let hlstate=1-hlstate<cr>
@@ -57,6 +65,14 @@
 	vnoremap $$ <esc>`>a"<esc>`<i"<esc>
 	vnoremap $q <esc>`>a'<esc>`<i'<esc>
 	vnoremap $e <esc>`>a"<esc>`<i"<esc>
+
+	"map Ctrl+Shift+j/k, to move line/visually-selected-code-blocks up/down
+	nnoremap <C-S-j> :m .+1<CR>==
+	nnoremap <C-S-k> :m .-2<CR>==
+	inoremap <C-S-j> <Esc>:m .+1<CR>==gi
+	inoremap <C-S-k> <Esc>:m .-2<CR>==gi
+	vnoremap <C-S-j> :m '>+1<CR>gv=gv
+	vnoremap <C-S-k> :m '<-2<CR>gv=gv
 
 "===============
 "PLUGIN SETTINGS
