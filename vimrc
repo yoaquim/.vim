@@ -46,6 +46,8 @@
 "[MAC]	"map Shift+Alt+j, Shift+Alt+k to move up/down 20 lines
 	nnoremap Ô 25j
 	nnoremap  25k
+	vnoremap Ô 25j
+	vnoremap  25k
 
 	"set '\h' to toggle search highlight
 	let hlstate=0
