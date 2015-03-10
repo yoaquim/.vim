@@ -40,6 +40,8 @@
 "[MAC]	"map Alt+j, Alt+k to move up/down 10 lines nnoremap ∆ 10j
 	nnoremap ∆ 10j
 	nnoremap ˚ 10k
+	vnoremap ∆ 10j
+	vnoremap ˚ 10k
 
 "[MAC]	"map Shift+Alt+j, Shift+Alt+k to move up/down 20 lines
 	nnoremap Ô 25j
