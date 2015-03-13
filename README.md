@@ -81,7 +81,7 @@ git submodule foreach git pull origin master
 * [Vim Sneak][24]
 * [Vim Repeat][25]
 * [Vim Surround][26]
-* [Split Join][27]
+
 
 * [YouCompleteMe][28]
 YouCompleteMe is a very powerful code-completion engine and setting it up takes some extra time and steps. 
