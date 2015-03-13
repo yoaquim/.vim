@@ -4,7 +4,7 @@
 
 This vim configuartion is based off of amix's [Ultimate vimrc][1].
 
-Used some stuff from [here][90] too.
+Used some stuff from [here][23] too.
 
 I mostly customized it for Javascript development.
 
@@ -68,8 +68,6 @@ git submodule foreach git pull origin master
 * [Expand Region] [5]
 * [Airline][6]
 * [Fugitive][7]
-* [Goyo][8]
-* [Vim-Zenroom2][9]
 * [Tern for Vim][10]
 * [Limelight][11]
 * [Vim Commentary][12]
@@ -80,6 +78,15 @@ git submodule foreach git pull origin master
 * [NERDTree][17]
 * [Ctrlp.vim][18]
 * [Vim Node][19]
+* [Vim Sneak][24]
+* [Vim Repeat][25]
+* [Vim Surround][26]
+* [Split Join][27]
+
+* [YouCompleteMe][28]
+
+- YouCompleteMe is a very powerful code-completion engine
+  and setting it up takes some extra time and steps. 
 
 ###Color Schemes###
 
@@ -101,8 +108,6 @@ git submodule foreach git pull origin master
 [5]:https://github.com/terryma/vim-expand-region
 [6]:https://github.com/bling/vim-airline
 [7]:https://github.com/tpope/vim-fugitive
-[8]:https://github.com/junegunn/goyo.vim
-[9]:https://github.com/amix/vim-zenroom2
 [10]:https://github.com/marijnh/tern_for_vim
 [11]:https://github.com/junegunn/limelight.vim
 [12]:https://github.com/tpope/vim-commentary
@@ -115,5 +120,10 @@ git submodule foreach git pull origin master
 [19]:https://github.com/moll/vim-node
 [20]:http://ethanschoonover.com/solarized/vim-colors-solarized
 [21]:https://github.com/goatslacker/mango.vim
-[22]://github.com/tomasr/molokai
-[90]:https://github.com/joyent/node/wiki/Vim-Plugins
+[22]:https//github.com/tomasr/molokai
+[23]:https://github.com/joyent/node/wiki/Vim-Plugins
+[24]:https://github.com/justinmk/vim-sneak
+[25]:https://github.com/tpope/vim-repeat
+[26]:https://github.com/tpope/vim-surround
+[27]:https://github.com/AndrewRadev/splitjoin.vim
+[28]:https://github.com/Valloric/YouCompleteMe

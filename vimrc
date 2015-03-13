@@ -49,6 +49,9 @@
 	vnoremap Ô 15j
 	vnoremap  15k
 
+	"create command 'Q' to quit without saving
+	command Q execute "q!"
+
 	"set '\h' to toggle search highlight
 	let hlstate=0
 	nnoremap <leader>h :if (hlstate == 0) \| nohlsearch \| else \| set hlsearch \| endif \| let hlstate=1-hlstate<cr>
@@ -96,11 +99,11 @@
 	let g:syntastic_check_on_open = 1
 	let g:syntastic_check_on_wq = 0
 
-	"Goyo/Vim-Zenroom2 Shortcut
-	nnoremap <silent> <leader>zz :Goyo<cr>
-
 	"Limelight Shortcut
 	nnoremap <silent><leader>z :Limeligh!!<cr>
+
+	"Sneak - let <s> jump to next occurence of query
+	let g:sneak#s_next = 1
 
 "============
 "COLOR SCHEMES
