@@ -93,7 +93,7 @@ It could just be that it works out-of-the-box with what I compiled and pushed he
 
 * [Mango][21]
 * [Solarize][20]
-* [Molokai][22] (Monokai port)
+* [Molokai][22]
 
 ###Some Shortcuts...###
 
