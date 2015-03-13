@@ -43,7 +43,7 @@ Now you need to initialize and update the plugins, which are git submodules:
 
 ```Shell
 cd ~/.vim
-git submodule update --init
+git submodule update --init --recursive
 ```
 
 If you ever need to update the plugin modules, just do:
