@@ -85,9 +85,9 @@ git submodule foreach git pull origin master
 * [YouCompleteMe][28]
 
 ####Note on YouCompleteMe####
-YouCompleteMe is a very powerful code-completion engine and setting it up takes some extra time and steps.
+YouCompleteMe is a very powerful code-completion engine and setting it up *may* take some extra time and steps.
 
-You'll probably wanna [check out their site][28].
+It could just be that it works out-of-the-box with what I compiled and pushed here, but if it feels weird, stops working or breaks, [head to their site][28].
 
 ###Color Schemes###
 
