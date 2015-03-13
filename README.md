@@ -84,9 +84,7 @@ git submodule foreach git pull origin master
 * [Split Join][27]
 
 * [YouCompleteMe][28]
-
-- YouCompleteMe is a very powerful code-completion engine
-  and setting it up takes some extra time and steps. 
+YouCompleteMe is a very powerful code-completion engine and setting it up takes some extra time and steps. 
 
 ###Color Schemes###
 
