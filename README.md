@@ -87,9 +87,22 @@ git submodule foreach git pull origin master
 ####Note on YouCompleteMe####
 YouCompleteMe is a very powerful code-completion engine.
 
-Setting it up *may* take some extra time and steps.
+Setting it up takes some extra steps ([head to their site][29] for the full instructions):
 
-It could just be that it works out-of-the-box with what I compiled and pushed here, but if it feels weird, stops working or breaks, [head to their site][28].
+1. Make sure that your version of Vim is at least 7.3.584 and that it has support for python2 scripting. If you installed homebrew's mavcim version - referenced at the beginning - you're good.
+2. Install [cmake][30]. If you have homebrew, you can just do `brew install cmake`.  
+3. Compile YCM support libraries:
+```
+cd ~
+mkdir ycm_build
+cd ycm_build
+
+cmake -G "Unix Makefiles" . ~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp
+
+make ycm_support_libs
+```
+***These steps won't include support for C family languages***
+If you want that, go check out the full instructions.
 
 ###Color Schemes###
 
@@ -130,3 +143,5 @@ It could just be that it works out-of-the-box with what I compiled and pushed he
 [26]:https://github.com/tpope/vim-surround
 [27]:https://github.com/AndrewRadev/splitjoin.vim
 [28]:https://github.com/Valloric/YouCompleteMe
+[29]:https://github.com/Valloric/YouCompleteMe#full-installation-guide
+[30]:http://www.cmake.org/download/
