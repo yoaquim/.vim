@@ -65,7 +65,9 @@ git submodule foreach git pull origin master
 
 ###Plugins###
 
-* [Expand Region] [5]
+* [Split Join][27]
+* [Vim Surround][26]
+* [Expand Region][5]
 * [Airline][6]
 * [Fugitive][7]
 * [Tern for Vim][10]
@@ -80,7 +82,7 @@ git submodule foreach git pull origin master
 * [Vim Node][19]
 * [Vim Sneak][24]
 * [Vim Repeat][25]
-* [Vim Surround][26]
+
 
 
 * [YouCompleteMe][28]
