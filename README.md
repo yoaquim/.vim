@@ -84,6 +84,11 @@ git submodule foreach git pull origin master
 * [Split Join][27]
 * [YouCompleteMe][28]
 
+####Note on YouCompleteMe####
+YouCompleteMe is a very powerful code-completion engine and setting it up takes some extra time and steps.
+
+You'll probably wanna [check out their site][28].
+
 ###Color Schemes###
 
 * [Mango][21]
