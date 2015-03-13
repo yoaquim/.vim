@@ -101,7 +101,7 @@ cmake -G "Unix Makefiles" . ~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp
 
 make ycm_support_libs
 ```
-***These steps won't include support for C family languages***
+**These steps won't include support for C family languages**.
 If you want that, go check out the full instructions.
 
 ###Color Schemes###
