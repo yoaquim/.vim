@@ -85,6 +85,11 @@
 	"NerdTree shortcut
 	map <silent><leader>d :NERDTreeToggle<CR>
 
+
+	"Remap CtrlP pluging
+	let g:ctrlp_map = '<leader>p'
+	let g:ctrlp_cmd = 'CtrlP'
+
 	"Syntastic settings
 	let g:syntastic_always_populate_loc_list = 1
 	let g:syntastic_auto_loc_list = 0 
