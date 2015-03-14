@@ -113,7 +113,7 @@
 	let base16colorspace=256  
 	
 	"use dark variant, instead of light
-	"set background=dark
+	set background=dark
 
 	"base16 color scheme
 	colorscheme base16-default
