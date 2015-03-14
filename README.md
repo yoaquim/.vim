@@ -92,6 +92,7 @@ Setting it up takes some extra steps ([head to their site][29] for the full inst
 1. Make sure that your version of Vim is at least 7.3.584 and that it has support for python2 scripting. If you installed homebrew's mavcim version - referenced at the beginning - you're good.
 2. Install [cmake][30]. If you have homebrew, you can just do `brew install cmake`.  
 3. Compile YCM support libraries:
+
 ```
 cd ~
 mkdir ycm_build
@@ -104,6 +105,12 @@ make ycm_support_libs
 **These steps won't include support for C family languages**.
 
 If you want that, go check out the full instructions.
+
+###Tern Support###
+
+[YouCompleteMe][28] doesn't come with support for Javascript out of the box - it does scan the current file for things you've typed, but no pure JS support.
+
+Luckily, [Tern][10] provides an omni-completion function that YCM can hook into; this offers really good, native Javascript completion.
 
 ###Color Schemes###
 
