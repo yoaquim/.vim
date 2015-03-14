@@ -105,15 +105,21 @@
 	"Sneak - let <s> jump to next occurence of query
 	let g:sneak#s_next = 1
 
-"============
-"COLOR SCHEMES
-"============
+"======================
+"COLOR SCHEMES (BASE16)
+"======================
 
-	"access colors present in 256 colorspace
+"***
+"The vim colorscheme specified here isn't truly working. The iterm/vim theme is set by changing the bash16-schell script fix, located in .bash_profile.
+"Edit the BASE16_SHELL variable in order to change the actual terminal/iterm AND vim colorscheme.
+"***
+	"access colors present in 256 colorspace (since iTerm is using xterm-256)
 	let base16colorspace=256  
 	
 	"use dark variant, instead of light
+	"* doesn't do anything, but here for consistency
 	set background=dark
 
 	"base16 color scheme
+	"* doesn't really change color, but if not here, messesup colorscheme
 	colorscheme base16-default
