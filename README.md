@@ -121,10 +121,10 @@ Still trying to find a workaround for this...
 ###Some Shortcuts...###
 
 * `:Q` force quits, without saving
-* `Alt+j` jumps 5 lines down (same as `:5j`)
-* `Alt+k` jumps 5 lines up (same as `:5k`)
-* `Shift+Alt+j` jumps 15 lines down (same as `:15j`)
-* `Shift+Alt+k` jumps 15 lines up (same as `:15k`)
+* `Alt+j` jumps 5 lines down (same as `5j`)
+* `Alt+k` jumps 5 lines up (same as `5k`)
+* `Shift+Alt+j` jumps 15 lines down (same as `15j`)
+* `Shift+Alt+k` jumps 15 lines up (same as `15k`)
 * Spell checking: `\ss`
 * Highlight search: `\h\h` first time only; afterwards, toggle by pressing `\h`
 * Easier window navigation: `Ctrl+h, Ctrl+j, Ctrl+k, Ctrl+l` for left, down, up & right, respectively
