@@ -114,7 +114,7 @@ I'm also using [iTerm2][21], and so I needed [base16 for iTern2][22].
 If you want to use a 256 colorspace, you'll need to add the [base16-shell][31] fix.
 
 With that shell fix, I've only been able to change vim's colorscheme by changing
-iTerm's colorscheme **through** [base16-shell][31]'s option that lives in your `.bash_profile`.
+iTerm's colorscheme **through** [base16-shell's option][32] that lives in your `.bash_profile`.
 
 Still trying to find a workaround for this...
 
@@ -160,3 +160,4 @@ Still trying to find a workaround for this...
 [29]:https://github.com/Valloric/YouCompleteMe#full-installation-guide
 [30]:http://www.cmake.org/download/
 [31]:https://github.com/chriskempson/base16-shell
+[32]:https://github.com/chriskempson/base16-shell#bashzsh
