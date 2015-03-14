@@ -108,7 +108,7 @@
 "======================
 "COLOR SCHEMES (BASE16)
 "======================
-
+"
 "***
 "The vim colorscheme specified here isn't truly working. The iterm/vim theme is set by changing the bash16-schell script fix, located in .bash_profile.
 "Edit the BASE16_SHELL variable in order to change the actual terminal/iterm AND vim colorscheme.
@@ -121,5 +121,5 @@
 	set background=dark
 
 	"base16 color scheme
-	"* doesn't really change color, but if not here, messesup colorscheme
+	"* doesn't really change color, but if not here, messes up colorscheme
 	colorscheme base16-default
