@@ -109,17 +109,11 @@
 "COLOR SCHEMES
 "============
 
-	"MONOKAI
-	"-------------
-	colorscheme monokai
+	"access colors present in 256 colorspace
+	let base16colorspace=256  
+	
+	"use dark variant, instead of light
+	"set background=dark
 
-"[OFF]	"MANGO 
-	"------------
-	"set background=dark   
-	"colorscheme mango
-
-"[OFF]	"SOLARIZED 
-	"---------
-	" set background=dark
-	" let g:solarized_termcolors=256
-	" colorscheme solarized
+	"base16 color scheme
+	colorscheme base16-default
