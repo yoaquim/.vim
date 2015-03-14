@@ -107,16 +107,29 @@ If you want that, go check out the full instructions.
 
 ###Color Schemes###
 
-* [Mango][21]
-* [Solarize][20]
-* [Molokai][22]
+I'm using base16 color schemes for vim: [base16-vim][20].
+
+I'm also using [iTerm2][21], and so I needed [base16 for iTern2][22].
+
+If you want to use a 256 colorspace, you'll need to add the [base16-shell][31] fix.
+
+With that shell fix, I've only been able to change vim's colorscheme by changing
+iTerm's colorscheme **through** [base16-shell][31]'s option that lives in your `.bash_profile`.
+
+Still trying to find a workaround for this...
 
 ###Some Shortcuts...###
 
-* Spell checking 
-* Wrap selection in brackets, parenthesis, etc.
-* Easier window navigation
-* Shortcuts for plugins
+* `:Q` force quits, without saving
+* `Alt+j` jumps 5 lines down (same as `:5j`)
+* `Alt+k` jumps 5 lines up (same as `:5k`)
+* `Shift+Alt+j` jumps 15 lines down (same as `:15j`)
+* `Shift+Alt+k` jumps 15 lines up (same as `:15k`)
+* Spell checking: `\ss`
+* Highlight search: `\h\h` first time only; afterwards, toggle by pressing `\h`
+* Easier window navigation: `Ctrl+h, Ctrl+j, Ctrl+k, Ctrl+l` for left, down, up & right, respectively
+* Wrap selection in brackets, parenthesis, etc. (view vimrc starting at line 68)
+* Shortcuts for plugins (view vimrc starting at line 88)
 
 [1]:https://github.com/amix/vimrc
 [2]:http://nodejs.org/
@@ -135,9 +148,9 @@ If you want that, go check out the full instructions.
 [17]:https://github.com/scrooloose/nerdtree
 [18]:https://github.com/kien/ctrlp.vim
 [19]:https://github.com/moll/vim-node
-[20]:http://ethanschoonover.com/solarized/vim-colors-solarized
-[21]:https://github.com/goatslacker/mango.vim
-[22]:https//github.com/tomasr/molokai
+[20]:https://github.com/chriskempson/base16-vim
+[21]:http://iterm2.com
+[22]:https://github.com/chriskempson/base16-iterm2
 [23]:https://github.com/joyent/node/wiki/Vim-Plugins
 [24]:https://github.com/justinmk/vim-sneak
 [25]:https://github.com/tpope/vim-repeat
@@ -146,3 +159,4 @@ If you want that, go check out the full instructions.
 [28]:https://github.com/Valloric/YouCompleteMe
 [29]:https://github.com/Valloric/YouCompleteMe#full-installation-guide
 [30]:http://www.cmake.org/download/
+[31]:https://github.com/chriskempson/base16-shell
