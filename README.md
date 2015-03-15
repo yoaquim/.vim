@@ -56,6 +56,7 @@ git submodule foreach git pull origin master
 * Load plugin files for file types
 * Load indent files for file types
 * Syntax Highlighting on
+* Set `updatetime` to 750 milliseconds
 * Set `backspace` to act as expected
 * Enable mouse (if available)
 * Show command status at bottom
