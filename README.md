@@ -65,9 +65,7 @@ git submodule foreach git pull origin master
 
 ###Plugins###
 
-* [Expand Region][5]
 * [Airline][6]
-* [Fugitive][7]
 * [Tern for Vim][10]
 * [Limelight][11]
 * [Vim Commentary][12]
@@ -144,9 +142,7 @@ Still trying to find a workaround for this...
 [2]:http://nodejs.org/
 [3]:http://brew.sh/
 [4]:http://store1.adobe.com/cfusion/store/html/index.cfm?event=displayFontPackage&code=1960
-[5]:https://github.com/terryma/vim-expand-region
 [6]:https://github.com/bling/vim-airline
-[7]:https://github.com/tpope/vim-fugitive
 [10]:https://github.com/marijnh/tern_for_vim
 [11]:https://github.com/junegunn/limelight.vim
 [12]:https://github.com/tpope/vim-commentary
