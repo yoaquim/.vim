@@ -76,6 +76,7 @@ git submodule foreach git pull origin master
 * [NERDTree][17]
 * [Ctrlp.vim][18]
 * [Vim Node][19]
+* [Vim-Gitgutter][5]
 * [Vim Sneak][24]
 * [Vim Repeat][25]
 * [Vim Surround][26]
@@ -150,6 +151,7 @@ Again, **this will change your console/iTerm colorscheme also**.
 [2]:http://nodejs.org/
 [3]:http://brew.sh/
 [4]:http://store1.adobe.com/cfusion/store/html/index.cfm?event=displayFontPackage&code=1960
+[5]:https://github.com/airblade/vim-gitgutter
 [6]:https://github.com/bling/vim-airline
 [10]:https://github.com/marijnh/tern_for_vim
 [11]:https://github.com/junegunn/limelight.vim
