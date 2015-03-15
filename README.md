@@ -106,7 +106,7 @@ make ycm_support_libs
 
 If you want that, go check out the full instructions.
 
-####Tern Support####
+#####Tern Support#####
 
 [YouCompleteMe][28] doesn't come with support for Javascript out of the box - it does scan the current file for things you've typed, but no pure JS support.
 
