@@ -105,6 +105,16 @@
 	"Sneak - let <s> jump to next occurence of query
 	let g:sneak#s_next = 1
 
+	"Change Gitgutter's update time (faster, but requires Vim 7.4.427+)
+        let g:gitgutter_realtime=750
+        "Toggle highlighting for Gitgutter
+        nmap <Leader>gh :GitGutterLineHighlightsToggle<CR>
+        "Gitgutter modified mappings
+        nmap ]h <Plug>GitGutterNextHunk
+        nmap [h <Plug>GitGutterPrevHunk
+        nmap <Leader>ha <Plug>GitGutterStageHunk
+        nmap <Leader>hu <Plug>GitGutterRevertHunk
+
 "======================
 "COLOR SCHEMES (BASE16)
 "======================
