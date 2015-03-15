@@ -1,5 +1,5 @@
-#Custom Vim Config#
 
+#Custom Vim Config#
 ###Intro###
 
 This vim configuartion is based off of amix's [Ultimate vimrc][1].
@@ -132,6 +132,8 @@ Still trying to find a workaround for this...
 * `Alt+k` jumps 5 lines up (same as `5k`)
 * `Shift+Alt+j` jumps 15 lines down (same as `15j`)
 * `Shift+Alt+k` jumps 15 lines up (same as `15k`)
+* `Ctrl+Shift+j` moves the current line up
+* `Ctrl+Shift+k` moves the current line down
 * Spell checking: `\ss`
 * Highlight search: `\h\h` first time only; afterwards, toggle by pressing `\h`
 * Easier window navigation: `Ctrl+h, Ctrl+j, Ctrl+k, Ctrl+l` for left, down, up & right, respectively
