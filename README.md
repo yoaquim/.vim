@@ -77,7 +77,7 @@ git submodule foreach git pull origin master
 * [NERDTree][17]
 * [Ctrlp.vim][18]
 * [Vim Node][19]
-* [Vim-Gitgutter][5]
+* [Vim Gitgutter][5]
 * [Vim Sneak][24]
 * [Vim Repeat][25]
 * [Vim Surround][26]
@@ -133,7 +133,7 @@ So if you want the dark base16-ocean theme, you'd do `.../base16-shell/base16-oc
 
 Again, **this will change your console/iTerm colorscheme also**.
 
-###some shortcuts...###
+###Some shortcuts...###
 
 * `:Q` force quits, without saving
 * `Alt+j` jumps 5 lines down (same as `5j`)
