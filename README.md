@@ -118,10 +118,9 @@ I'm also using [iTerm2][21], and so I needed [base16 for iTern2][22].
 
 If you want to use a 256 colorspace, you'll need to add the [base16-shell][31] fix.
 
-With that shell fix, I've only been able to change vim's colorscheme by changing
-iTerm's colorscheme **through** [base16-shell's option][32] that lives in your `.bash_profile`.
-
-Still trying to find a workaround for this...
+Since console Vim can only access colorschemes available to the console/iTerm2, you have to change
+the console's/iTerm's colorscheme **through** [base16-shell's option][32] that lives in your `.bash_profile`,
+in order to change your Vim's colorscheme.
 
 ###Some Shortcuts...###
 

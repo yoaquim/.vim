@@ -108,11 +108,12 @@
 "======================
 "COLOR SCHEMES (BASE16)
 "======================
-"
-"***
-"The vim colorscheme specified here isn't truly working. The iterm/vim theme is set by changing the bash16-schell script fix, located in .bash_profile.
-"Edit the BASE16_SHELL variable in order to change the actual terminal/iterm AND vim colorscheme.
-"***
+
+	"***
+	"The vim colorscheme specified here isn't truly working. The iterm/vim theme is set by changing the bash16-schell script fix, located in .bash_profile.
+	"Edit the BASE16_SHELL variable in order to change the actual terminal/iterm AND vim colorscheme.
+	"***
+	
 	"access colors present in 256 colorspace (since iTerm is using xterm-256)
 	let base16colorspace=256  
 	
