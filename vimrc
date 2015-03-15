@@ -11,11 +11,8 @@
 	"syntax highlighting on
 	syntax on
 
-	"set fold method (code block collapse) to syntax (language specific)
-	set foldmethod=manual
-	"press space to toggle foldingl if no fold, default behavior
-	nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
-	vnoremap <Space> zf
+	"change Vim's updatetime setting (mostly for vim-gitgutter plugin)	
+	set updatetime=750
 
 	"enable mouse
 	if has('mouse')
@@ -37,6 +34,12 @@
 	"set incremental search
 	set incsearch
 
+	"set fold method (code block collapse) to syntax (language specific)
+	set foldmethod=manual
+	"press space to toggle foldingl if no fold, default behavior
+	nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
+	vnoremap <Space> zf
+	
 "[MAC]	"map Alt+j, Alt+k to move up/down 10 lines nnoremap ∆ 10j
 	nnoremap ∆ 5j
 	nnoremap ˚ 5k
@@ -105,8 +108,6 @@
 	"Sneak - let <s> jump to next occurence of query
 	let g:sneak#s_next = 1
 
-	"Change Gitgutter's update time (faster, but requires Vim 7.4.427+)
-        let g:gitgutter_realtime=750
         "Toggle highlighting for Gitgutter
         nmap <Leader>gh :GitGutterLineHighlightsToggle<CR>
         "Gitgutter modified mappings
