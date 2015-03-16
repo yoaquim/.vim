@@ -4,6 +4,8 @@
 
 	"pathogen package manager
 	execute pathogen#infect()
+	"generate helptags for all plugins
+	execute pathogen#helptags()
 
 	"loads plugin files and indent files for file types
 	filetype plugin indent on
@@ -135,3 +137,11 @@
 	"base16 color scheme
 	"* doesn't really change color, but if not here, messes up colorscheme
 	colorscheme base16-default
+
+"**********************
+"SPECIAL MAP
+"**********************
+	
+	"placed at bottom so no comments will be interpreted after <Esc>
+	"remaps <Esc> key to jk (need to be typed quickly)
+	inoremap jk <Esc>
