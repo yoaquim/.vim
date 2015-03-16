@@ -204,4 +204,3 @@ Again, **this will change your console/iTerm colorscheme also**.
 [30]:http://www.cmake.org/download/
 [31]:https://github.com/chriskempson/base16-shell
 [32]:https://github.com/chriskempson/base16-shell#bashzsh
-*
