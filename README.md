@@ -1,4 +1,3 @@
-
 #Custom Vim Config#
 ###Intro###
 
@@ -101,7 +100,9 @@ YouCompleteMe is a very powerful code-completion engine.
 Setting it up takes some extra steps ([head to their site][29] for the full instructions):
 
 1. Make sure that your version of Vim is at least 7.3.584 and that it has support for python2 scripting. If you installed homebrew's mavcim version - referenced at the beginning - you're good.
+
 2. Install [cmake][30]. If you have homebrew, you can just do `brew install cmake`.  
+
 3. Compile YCM support libraries:
 
 ```
@@ -147,17 +148,29 @@ Again, **this will change your console/iTerm colorscheme also**.
 ###Some shortcuts...###
 
 * Quickly type `jk` to go to Normal Mode - mapped to <Esc>('jk' is a rare diagraph in English and you can always wait between both typing both chars if you ever need to insert them)
+
 * `:Q` force quits, without saving
+
 * `Alt+j` jumps 5 lines down (same as `5j`)
+
 * `Alt+k` jumps 5 lines up (same as `5k`)
+
 * `Shift+Alt+j` jumps 15 lines down (same as `15j`)
+
 * `Shift+Alt+k` jumps 15 lines up (same as `15k`)
+
 * `Ctrl+Shift+j` moves the current line up (can also be used in visual mode when selecting blocks/paragraphs)
+
 * `Ctrl+Shift+k` moves the current line down (can also be used in visual mode when selecting blocks/paragraphs)
+
 * Spell checking: `\ss`
+
 * Highlight search: `\h\h` first time you open a file; afterwards, toggle by pressing `\h`
+
 * Easier window navigation: `Ctrl+h`, `Ctrl+j`,`Ctrl+k`, `Ctrl+l` for left, down, up & right, respectively
+
 * Wrap selection in brackets, parenthesis, etc. (view vimrc starting at line 68)
+
 * Shortcuts for plugins (view vimrc starting at line 88)
 
 [1]:https://github.com/amix/vimrc
