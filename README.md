@@ -5,11 +5,15 @@ This vim configuartion is based off of amix's [Ultimate vimrc][1].
 
 Used some stuff from [here][23] too.
 
+You should read through this entire doc in order to successfully set up this vim conf.
+
 I mostly customized it for Javascript development.
 
 I use Adobe's free [Source Code Pro][4] font.
 
 You're gonna need [npm][2] (comes bundled with [Node.js][2]) for some plugins.
+
+And I seriously recommend getting [Homebrew][3], if you haven't already - makes all the extra steps, and installing in general, super easy.
 
 I use [Homebrew][3]'s vim: 
 
@@ -54,6 +58,7 @@ To finish setting everything up:
  - [Finish isntalling Taglist](#note-on-taglist)
  - [Finish isntalling YouCompleteMe](#note-on-youcompleteme)
  - [Set up Color Schemes](#color-schemes)
+
 ###Settings###
 
 * Load plugin files for file types
