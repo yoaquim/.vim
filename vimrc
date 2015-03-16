@@ -93,7 +93,6 @@
 	"NerdTree shortcut
 	map <silent><leader>d :NERDTreeToggle<CR>
 
-
 	"Remap CtrlP pluging
 	let g:ctrlp_map = '<leader>p'
 	let g:ctrlp_cmd = 'CtrlP'
@@ -117,6 +116,9 @@
         nmap [h <Plug>GitGutterPrevHunk
         nmap <Leader>ha <Plug>GitGutterStageHunk
         nmap <Leader>hu <Plug>GitGutterRevertHunk
+
+	"Hide YouCompleteMe preview window after selection
+	let g:ycm_autoclose_preview_window_after_completion = 1
 
 	"Toggle source doc window (taglist.vim plugin)
 	nnoremap <Leader>t :TlistToggle<CR>
