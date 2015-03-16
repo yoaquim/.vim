@@ -55,7 +55,7 @@ If you ever need to update the plugin modules, just do:
 git submodule foreach git pull origin master
 ```
 To finish setting everything up:
- - [Finish isntalling Taglist](#note-on-taglist)
+ - [Finish installing Taglist](#note-on-taglist)
  - [Finish isntalling YouCompleteMe](#note-on-youcompleteme)
  - [Set up Color Schemes](#color-schemes)
 
