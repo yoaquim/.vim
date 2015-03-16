@@ -129,7 +129,7 @@ BASE16_SHELL="$HOME/.config/base16-shell/*CHOOSE_COLOR_SCHEME*.sh"
 [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL ]]
 ```
 
-So if you want the dark base16-ocean theme for example, you'd do `.../base16-shell/base16-ocean-dark.sh...`.
+So if you want the dark base16-ocean theme for example, you'd do `.../base16-shell/base16-ocean.dark.sh...`.
 
 Again, **this will change your console/iTerm colorscheme also**.
 
