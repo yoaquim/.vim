@@ -147,7 +147,7 @@ Again, **this will change your console/iTerm colorscheme also**.
 
 ###Some shortcuts...###
 
-* Quickly type `jk` to go to Normal Mode - mapped to `Esc`('jk' is a rare diagraph in English and you can always wait between both typing both chars if you ever need to insert them)
+* Quickly type `jk` to go to Normal Mode - mapped to `Esc`('jk' is a rare diagraph in English and you can always wait between typing both chars if you ever need to insert them)
 
 * `:Q` force quits, without saving
 
