@@ -50,6 +50,8 @@ If you ever need to update the plugin modules, just do:
 ```Shell
 git submodule foreach git pull origin master
 ```
+Keep on reading the [Notes](#noteontaglist) in the [Plugins](#plugins) for the final steps.
+
 ###Settings###
 
 * Load plugin files for file types
