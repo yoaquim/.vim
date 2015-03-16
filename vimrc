@@ -30,9 +30,6 @@
 	"set line numbers
 	set nu
 
-	"set ruler
-	set ruler
-
 	"set incremental search
 	set incsearch
 

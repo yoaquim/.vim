@@ -71,7 +71,6 @@ To finish setting everything up:
 * Show command status at bottom
 * Enable line numbers
 * Enable incremental search (search matches as you type)
-* Enable Vim ruler (info on current line at bottom of screen) 
 
 ###Plugins###
 
