@@ -129,7 +129,7 @@ BASE16_SHELL="$HOME/.config/base16-shell/*CHOOSE_COLOR_SCHEME*.sh"
 [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL ]]
 ```
 
-So if you want the dark base16-ocean theme, you'd do `.../base16-shell/base16-ocean-dark.sh...`.
+So if you want the dark base16-ocean theme for example, you'd do `.../base16-shell/base16-ocean-dark.sh...`.
 
 Again, **this will change your console/iTerm colorscheme also**.
 
@@ -140,11 +140,11 @@ Again, **this will change your console/iTerm colorscheme also**.
 * `Alt+k` jumps 5 lines up (same as `5k`)
 * `Shift+Alt+j` jumps 15 lines down (same as `15j`)
 * `Shift+Alt+k` jumps 15 lines up (same as `15k`)
-* `Ctrl+Shift+j` moves the current line up
-* `Ctrl+Shift+k` moves the current line down
+* `Ctrl+Shift+j` moves the current line up (can also be used in visual mode when selecting blocks/paragraphs)
+* `Ctrl+Shift+k` moves the current line down (can also be used in visual mode when selecting blocks/paragraphs)
 * Spell checking: `\ss`
-* Highlight search: `\h\h` first time only; afterwards, toggle by pressing `\h`
-* Easier window navigation: `Ctrl+h, Ctrl+j, Ctrl+k, Ctrl+l` for left, down, up & right, respectively
+* Highlight search: `\h\h` first time you open a file; afterwards, toggle by pressing `\h`
+* Easier window navigation: `Ctrl+h`, `Ctrl+j`,`Ctrl+k`, `Ctrl+l` for left, down, up & right, respectively
 * Wrap selection in brackets, parenthesis, etc. (view vimrc starting at line 68)
 * Shortcuts for plugins (view vimrc starting at line 88)
 
