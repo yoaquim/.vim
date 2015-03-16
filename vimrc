@@ -118,6 +118,9 @@
         nmap <Leader>ha <Plug>GitGutterStageHunk
         nmap <Leader>hu <Plug>GitGutterRevertHunk
 
+	"Toggle source doc window (taglist.vim plugin)
+	nnoremap <Leader>t :TlistToggle<CR>
+
 "======================
 "COLOR SCHEMES (BASE16)
 "======================

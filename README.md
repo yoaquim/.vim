@@ -82,7 +82,18 @@ git submodule foreach git pull origin master
 * [Vim Repeat][25]
 * [Vim Surround][26]
 * [Split Join][27]
+* [Taglist][7]
 * [YouCompleteMe][28]
+
+####Note on Taglist####
+Taglist allows you to view source docs for whatever file your working with, and works just like
+Vim's tags/helptags.
+
+It needs [Exuberant Ctags][8] to work, but hombrew makes that easy: `brew install ctags-exuberant`.
+
+After that, navigate to your .vim dir, open vim and run the helptags command for the current dir: `:helptags .`.
+
+You can then run `:TlistToggle` to show the source doc window, or just do `\t`, a custom mapping I have for that command.
 
 ####Note on YouCompleteMe####
 YouCompleteMe is a very powerful code-completion engine.
@@ -135,6 +146,7 @@ Again, **this will change your console/iTerm colorscheme also**.
 
 ###Some shortcuts...###
 
+* Quickly type `jk` to go to Normal Mode - mapped to <Esc>('jk' is a rare diagraph in English and you can always wait between both typing both chars if you ever need to insert them)
 * `:Q` force quits, without saving
 * `Alt+j` jumps 5 lines down (same as `5j`)
 * `Alt+k` jumps 5 lines up (same as `5k`)
@@ -154,6 +166,8 @@ Again, **this will change your console/iTerm colorscheme also**.
 [4]:http://store1.adobe.com/cfusion/store/html/index.cfm?event=displayFontPackage&code=1960
 [5]:https://github.com/airblade/vim-gitgutter
 [6]:https://github.com/bling/vim-airline
+[7]:https://github.com/vim-scripts/taglist.vim
+[8]:http://ctags.sourceforge.net/
 [10]:https://github.com/marijnh/tern_for_vim
 [11]:https://github.com/junegunn/limelight.vim
 [12]:https://github.com/tpope/vim-commentary
@@ -177,3 +191,4 @@ Again, **this will change your console/iTerm colorscheme also**.
 [30]:http://www.cmake.org/download/
 [31]:https://github.com/chriskempson/base16-shell
 [32]:https://github.com/chriskempson/base16-shell#bashzsh
+*
