@@ -56,7 +56,7 @@ git submodule foreach git pull origin master
 ```
 To finish setting everything up:
  - [Finish installing Taglist](#note-on-taglist)
- - [Finish isntalling YouCompleteMe](#note-on-youcompleteme)
+ - [Finish installing YouCompleteMe](#note-on-youcompleteme)
  - [Set up Color Schemes](#color-schemes)
 
 ###Settings###
