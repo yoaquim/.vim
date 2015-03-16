@@ -48,6 +48,7 @@ Now you need to initialize and update the plugins, which are git submodules:
 cd ~/.vim
 git submodule update --init --recursive
 ```
+You should also do this each time you clone any repo that has submodules, or whenever you add a submodule.
 
 If you ever need to update the plugin modules, just do:
 
