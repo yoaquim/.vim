@@ -168,9 +168,9 @@ Again, **this will change your console/iTerm colorscheme also**.
 
 * `Shift+Alt+k` jumps 15 lines up (same as `15k`)
 
-* `Ctrl+Shift+j` moves the current line up (can also be used in visual mode when selecting blocks/paragraphs)
+* `Alt+Shift+.` moves the current line up (can also be used in visual mode when selecting blocks/paragraphs)
 
-* `Ctrl+Shift+k` moves the current line down (can also be used in visual mode when selecting blocks/paragraphs)
+* `Alt+Shift+,` moves the current line down (can also be used in visual mode when selecting blocks/paragraphs)
 
 * Spell checking: `\ss`
 

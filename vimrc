@@ -74,14 +74,14 @@
 	vnoremap $$ <esc>`>a"<esc>`<i"<esc>
 	vnoremap $q <esc>`>a'<esc>`<i'<esc>
 	vnoremap $e <esc>`>a"<esc>`<i"<esc>
-
-	"map Ctrl+Shift+j/k, to move line/visually-selected-code-blocks up/down
-	nnoremap <C-S-j> :m .+1<CR>==
-	nnoremap <C-S-k> :m .-2<CR>==
-	inoremap <C-S-j> <Esc>:m .+1<CR>==gi
-	inoremap <C-S-k> <Esc>:m .-2<CR>==gi
-	vnoremap <C-S-j> :m '>+1<CR>gv=gv
-	vnoremap <C-S-k> :m '<-2<CR>gv=gv
+	
+	"map <Alt+Shift+,> and <Alt+Shift+.>, to move line/visually-selected-code-blocks up and down
+	nnoremap ¯ :m .+1<CR>==
+	nnoremap ˘ :m .-2<CR>==
+	inoremap ¯ <Esc>:m .+1<CR>==gi
+	inoremap ˘ <Esc>:m .-2<CR>==gi
+	vnoremap ¯ :m '>+1<CR>gv=gv
+	vnoremap ˘ :m '<-2<CR>gv=gv
 
 "===============
 "PLUGIN SETTINGS
