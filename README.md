@@ -56,6 +56,7 @@ If you ever need to update the plugin modules, just do:
 git submodule foreach git pull origin master
 ```
 To finish setting everything up:
+ - [Finish installing JSHint](#note-on-jshint)
  - [Finish installing Taglist](#note-on-taglist)
  - [Finish installing YouCompleteMe](#note-on-youcompleteme)
  - [Set up Color Schemes](#color-schemes)
@@ -92,6 +93,11 @@ To finish setting everything up:
 * [Split Join][27]
 * [Taglist][7]
 * [YouCompleteMe][28]
+
+####Note on JSHint####
+You need [JSHint](http://jshint.com/) in order for the plugin to work.
+
+You can install it via npm: `sudo npm install -g jshint`.
 
 ####Note on Taglist####
 Taglist allows you to view source docs for whatever file your working with, and works just like
