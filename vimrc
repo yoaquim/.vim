@@ -75,8 +75,8 @@
 	vnoremap $q <esc>`>a'<esc>`<i'<esc>
 	vnoremap $e <esc>`>a"<esc>`<i"<esc>
 	
-	"map <Alt+Shift+,> and <Alt+Shift+.>, to move line/visually-selected-code-blocks up and down
-	nnoremap ¯ :m .+1<CR>==
+"[MAC]	"map <Alt+Shift+,> and <Alt+Shift+.>, to move line/visually-selected-code-blocks up and down
+	"[MAC]nnoremap ¯ :m .+1<CR>==
 	nnoremap ˘ :m .-2<CR>==
 	inoremap ¯ <Esc>:m .+1<CR>==gi
 	inoremap ˘ <Esc>:m .-2<CR>==gi
