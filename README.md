@@ -56,7 +56,7 @@ If you ever need to update the plugin modules, just do:
 git submodule foreach git pull origin master
 ```
 To finish setting everything up:
- - [Finish installing JSHint](#note-on-jshint)
+ - [Finish installing JSHint2](#note-on-jshint2)
  - [Finish installing Taglist](#note-on-taglist)
  - [Finish installing YouCompleteMe](#note-on-youcompleteme)
  - [Set up Color Schemes](#color-schemes)
@@ -81,7 +81,7 @@ To finish setting everything up:
 * [Vim Commentary][12]
 * [Syntastic][13]
 * [Vim Autoclose][14]
-* [JSHint][15]
+* [Vim JSHint2][15]
 * [Javascript Syntax][16]
 * [NERDTree][17]
 * [Ctrlp.vim][18]
@@ -94,7 +94,7 @@ To finish setting everything up:
 * [Taglist][7]
 * [YouCompleteMe][28]
 
-####Note on JSHint####
+####Note on JSHint2####
 You need [JSHint](http://jshint.com/) in order for the plugin to work.
 
 You can install it via npm: `sudo npm install -g jshint`.
@@ -201,7 +201,7 @@ Again, **this will change your console/iTerm colorscheme also**.
 [12]:https://github.com/tpope/vim-commentary
 [13]:https://github.com/scrooloose/syntastic
 [14]:https://github.com/Townk/vim-autoclose
-[15]:https://github.com/walm/jshint.vim
+[15]:https://github.com/Shutnik/jshint2.vim
 [16]:https://github.com/jelera/vim-javascript-syntax
 [17]:https://github.com/scrooloose/nerdtree
 [18]:https://github.com/kien/ctrlp.vim
