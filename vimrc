@@ -56,7 +56,7 @@
 
 	"set '\h' to toggle search highlight
 	let hlstate=0
-	nnoremap <leader>h :if (hlstate == 0) \| nohlsearch \| else \| set hlsearch \| endif \| let hlstate=1-hlstate<cr>
+	nnoremap <silent><Leader>h :if (hlstate == 0) \| nohlsearch \| else \| set hlsearch \| endif \| let hlstate=1-hlstate<cr>
 
 	"move between windows easily
 	map <C-j> <C-W>j
@@ -107,7 +107,7 @@
 	let g:sneak#s_next = 1
 
         "Toggle highlighting for Gitgutter
-        nmap <Leader>gh :GitGutterLineHighlightsToggle<CR>
+        nmap <silent><Leader>gh :GitGutterLineHighlightsToggle<CR>
         "Gitgutter modified mappings
         nmap ]h <Plug>GitGutterNextHunk
         nmap [h <Plug>GitGutterPrevHunk
@@ -120,7 +120,7 @@
 	"let g:ycm_show_diagnostics_ui = 0
 
 	"Toggle source doc window (taglist.vim plugin)
-	nnoremap <Leader>t :TlistToggle<CR>
+	nnoremap <silent><Leader>t :TlistToggle<CR>
 
 "======================
 "COLOR SCHEMES (BASE16)
