@@ -116,6 +116,8 @@
 
 	"Hide YouCompleteMe preview window after selection
 	let g:ycm_autoclose_preview_window_after_completion = 1
+	"Syntastic compatibility with YouCompleteMe
+	"let g:ycm_show_diagnostics_ui = 0
 
 	"Toggle source doc window (taglist.vim plugin)
 	nnoremap <Leader>t :TlistToggle<CR>
