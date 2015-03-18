@@ -57,14 +57,14 @@
 	command Q execute "q!"
 
 	"close preview windows
-	inoremap <silent><C-p> :pc <CR>
-	nnoremap <silent><C-p> :pc <CR>
-	vnoremap <silent><C-p> :pc <CR>
+	inoremap <silent><leader>xp :pc <CR>
+	nnoremap <silent><leader>xp :pc <CR>
+	vnoremap <silent><leader>xp :pc <CR>
 
 	"close location list
-	inoremap <silent><C-l> :lclose <CR>
-	nnoremap <silent><C-l> :lclose <CR>
-	vnoremap <silent><C-l> :lclose <CR>
+	inoremap <silent><leader>xl :lclose <CR>
+	nnoremap <silent><leader>xl :lclose <CR>
+	vnoremap <silent><leader>xl :lclose <CR>
 
 	"set '\h' to toggle search highlight
 	let hlstate=0
