@@ -108,7 +108,7 @@ It needs [Exuberant Ctags][8] to work, but hombrew makes that easy: `brew instal
 
 After that, navigate to your .vim dir, open vim and run the helptags command for the current dir: `:helptags .`.
 
-You can then run `:TlistToggle` to show the source doc window, or just do `\t`, a custom mapping I have for that command.
+You can then run `:TlistToggle` to show the source doc window, or just do `\tt`, a custom mapping I have for that command.
 
 ####Note on YouCompleteMe####
 YouCompleteMe is a very powerful code-completion engine.

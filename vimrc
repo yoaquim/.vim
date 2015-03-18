@@ -121,6 +121,8 @@
 		nnoremap <silent><leader>df :TernDef<CR>
 		"map TernDoc to '\dc\'
 		nnoremap <silent><leader>dc :TernDoc<CR>
+		"map TernType to '\ty\'
+		nnoremap <silent><leader>ty :TernType<CR>
 
 	"Limelight Shortcut
 	nnoremap <silent><leader>z :Limeligh!!<cr>
@@ -144,7 +146,7 @@
 		"let g:ycm_show_diagnostics_ui = 0
 
 	"Toggle source doc window (taglist.vim plugin)
-	nnoremap <silent><Leader>t :TlistToggle<CR>
+	nnoremap <silent><Leader>tt :TlistToggle<CR>
 
 "======================
 "COLOR SCHEMES (BASE16)
