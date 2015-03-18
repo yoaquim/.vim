@@ -86,6 +86,7 @@ To finish setting everything up:
 * [NERDTree][17]
 * [Ctrlp.vim][18]
 * [Vim Node][19]
+* [Vim Fugitive](https://github.com/tpope/vim-fugitive)
 * [Vim Gitgutter][5]
 * [Vim Sneak][24]
 * [Vim Repeat][25]
