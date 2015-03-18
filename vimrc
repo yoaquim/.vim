@@ -116,7 +116,7 @@
 
 	"Hide YouCompleteMe preview window after selection
 	let g:ycm_autoclose_preview_window_after_completion = 1
-	"Syntastic compatibility with YouCompleteMe
+"[OFF]	"Disable YouCompleteMe C-family checkers, in order to use Syntastic's
 	"let g:ycm_show_diagnostics_ui = 0
 
 	"Toggle source doc window (taglist.vim plugin)
