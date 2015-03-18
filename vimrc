@@ -14,7 +14,7 @@
 	syntax on
 
 	"change Vim's updatetime setting (mostly for vim-gitgutter plugin)	
-	set updatetime=750
+	set updatetime=1000
 
 	"enable mouse
 	if has('mouse')
