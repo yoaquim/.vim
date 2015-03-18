@@ -2,10 +2,11 @@
 "VIM SETTINGS
 "============
 
-	"pathogen package manager
-	execute pathogen#infect()
-	"generate helptags for all plugins
-	execute pathogen#helptags()
+	"Pathogen
+		"pathogen package manager
+		execute pathogen#infect()
+		"generate helptags for all plugins
+		execute pathogen#helptags()
 
 	"loads plugin files and indent files for file types
 	filetype plugin indent on
@@ -33,11 +34,12 @@
 	"set incremental search
 	set incsearch
 
-	"set fold method (code block collapse) to syntax (language specific)
-	set foldmethod=manual
-	"press space to toggle foldingl if no fold, default behavior
-	nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
-	vnoremap <Space> zf
+	"Folding
+		"set fold method (code block collapse) to syntax (language specific)
+		set foldmethod=manual
+		"press space to toggle foldingl if no fold, default behavior
+		nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
+		vnoremap <Space> zf
 	
 "[MAC]	"map Alt+j, Alt+k to move up/down 10 lines nnoremap ∆ 10j
 	nnoremap ∆ 5j
@@ -53,6 +55,16 @@
 
 	"create command 'Q' to quit without saving
 	command Q execute "q!"
+
+	"close preview windows
+	inoremap <silent><C-p> :pc <CR>
+	nnoremap <silent><C-p> :pc <CR>
+	vnoremap <silent><C-p> :pc <CR>
+
+	"close location list
+	inoremap <silent><C-l> :lclose <CR>
+	nnoremap <silent><C-l> :lclose <CR>
+	vnoremap <silent><C-l> :lclose <CR>
 
 	"set '\h' to toggle search highlight
 	let hlstate=0
@@ -88,7 +100,7 @@
 "===============
 
 	"NerdTree shortcut
-	map <silent><leader>d :NERDTreeToggle<CR>
+	map <silent><leader>dd :NERDTreeToggle<CR>
 
 	"Remap CtrlP pluging
 	let g:ctrlp_map = '<leader>p'
@@ -100,24 +112,36 @@
 	let g:syntastic_check_on_open = 1
 	let g:syntastic_check_on_wq = 0
 
+	"Tern Settings
+		"map TernRename to '\re\'
+		nnoremap <silent><leader>re :TernRename<CR>
+		"map TernRef to '\rf\'
+		nnoremap <silent><leader>rf :TernRef<CR>
+		"map TernDef to '\df\'
+		nnoremap <silent><leader>df :TernDef<CR>
+		"map TernDoc to '\dc\'
+		nnoremap <silent><leader>dc :TernDoc<CR>
+
 	"Limelight Shortcut
 	nnoremap <silent><leader>z :Limeligh!!<cr>
 
 	"Sneak - let <s> jump to next occurence of query
 	let g:sneak#s_next = 1
 
-        "Toggle highlighting for Gitgutter
-        nmap <silent><Leader>gh :GitGutterLineHighlightsToggle<CR>
-        "Gitgutter modified mappings
-        nmap ]h <Plug>GitGutterNextHunk
-        nmap [h <Plug>GitGutterPrevHunk
-        nmap <Leader>ha <Plug>GitGutterStageHunk
-        nmap <Leader>hu <Plug>GitGutterRevertHunk
+	"Gimgutter Settings
+		"toggle highlighting for Gitgutter
+		nmap <silent><Leader>gh :GitGutterLineHighlightsToggle<CR>
+		"gitgutter modified mappings
+		nmap ]h <Plug>GitGutterNextHunk
+		nmap [h <Plug>GitGutterPrevHunk
+		nmap <Leader>ha <Plug>GitGutterStageHunk
+		nmap <Leader>hu <Plug>GitGutterRevertHunk
 
-	"Hide YouCompleteMe preview window after selection
-	let g:ycm_autoclose_preview_window_after_completion = 1
-"[OFF]	"Disable YouCompleteMe C-family checkers, in order to use Syntastic's
-	"let g:ycm_show_diagnostics_ui = 0
+	"YouCompleteMe Settings"
+		"hide YouCompleteMe preview window after selection
+		let g:ycm_autoclose_preview_window_after_completion = 1
+"[OFF]		"disable YouCompleteMe C-family checkers, in order to use Syntastic's
+		"let g:ycm_show_diagnostics_ui = 0
 
 	"Toggle source doc window (taglist.vim plugin)
 	nnoremap <silent><Leader>t :TlistToggle<CR>
