@@ -17,27 +17,27 @@
 	"change Vim's updatetime setting (mostly for vim-gitgutter plugin)	
 	set updatetime=1000
 
-	"enable mouse
+	"if a mouse is present, enable it
 	if has('mouse')
 		set mouse=a
 	endif
 
-	"set backspace to work all-around
+	"set backspace to work as expected
 	set backspace=indent,eol,start
 
 	"show command status
 	set showcmd
 	
-	"set line numbers
+	"show line numbers
 	set nu
 
-	"set incremental search
+	"make search incremental
 	set incsearch
 
 	"Folding
-		"set fold method (code block collapse) to syntax (language specific)
+		"make folding be triggered manually
 		set foldmethod=manual
-		"press space to toggle foldingl if no fold, default behavior
+		"press space to toggle folding; if no fold, default behavior
 		nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
 		vnoremap <Space> zf
 	
@@ -55,6 +55,9 @@
 
 	"create command 'Q' to quit without saving
 	command Q execute "q!"
+
+	"create command 'W' to save file as sudo; need to press Enter twice
+	command W execute "w !sudo tee % >/dev/null"
 
 	"close preview windows
 	inoremap <silent><leader>xp :pc <CR>
@@ -147,10 +150,13 @@
 	"Gimgutter Settings
 		"toggle highlighting for Gitgutter
 		nmap <silent><Leader>gh :GitGutterLineHighlightsToggle<CR>
-		"gitgutter modified mappings
+		"move to next hunk
 		nmap ]h <Plug>GitGutterNextHunk
+		"move to previous hunk
 		nmap [h <Plug>GitGutterPrevHunk
+		"stage current hunk
 		nmap <Leader>ha <Plug>GitGutterStageHunk
+		"unstage current hunk
 		nmap <Leader>hu <Plug>GitGutterRevertHunk
 
 	"YouCompleteMe Settings"
@@ -167,8 +173,8 @@
 "======================
 
 	"***
-	"The vim colorscheme specified here isn't truly working. The iterm/vim theme is set by changing the bash16-schell script fix, located in .bash_profile.
-	"Edit the BASE16_SHELL variable in order to change the actual terminal/iterm AND vim colorscheme.
+	" The vim colorscheme specified here isn't truly working. The iterm/vim theme is set by changing the bash16-schell script fix, located in .bash_profile.
+	" Edit the BASE16_SHELL variable in order to change the actual terminal/iterm AND vim colorscheme.
 	"***
 	
 	"access colors present in 256 colorspace (since iTerm is using xterm-256)

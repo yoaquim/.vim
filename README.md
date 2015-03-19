@@ -165,6 +165,8 @@ Again, **this will change your console/iTerm colorscheme also**.
 
 * Quickly type `jk` to go to Normal Mode - mapped to `Esc`('jk' is a rare diagraph in English and you can always wait between typing both chars if you ever need to insert them)
 
+* `:W` saves current file as sudo (for when you open a file having no write permissions)
+
 * `:Q` force quits, without saving
 
 * `Alt+j` jumps 5 lines down (same as `5j`)
