@@ -107,12 +107,26 @@
 	let g:ctrlp_cmd = 'CtrlP'
 
 	"Syntastic settings
-	let g:syntastic_always_populate_loc_list = 1
-	let g:syntastic_auto_loc_list = 0 
-	let g:syntastic_check_on_open = 1
-	let g:syntastic_check_on_wq = 0
+		"tell syntastic to use JSHint as checker
+		let g:syntastic_javascript_checkers = ['jshint']
+		"prevent syntastic from populating the loc list with each error it finds
+		let g:syntastic_always_populate_loc_list = 1
+		"dont let location list open up automatically	
+		let g:syntastic_auto_loc_list = 0 
+		"let syntastic check for errors when opening
+		let g:syntastic_check_on_open = 1
+		"don't let syntastic check for errors when exiting (takes too long)
+		let g:syntastic_check_on_wq = 1
+		"change syntastic's default error symbol (unicode)
+		let g:syntastic_error_symbol = "✖"
+		"change error symbol color to match DiffDelete highlight group
+		highlight link SyntasticErrorSign DiffDelete 
+		"change error line highlight color to match Error highlight group
+		highlight link SyntasticErrorLine Error 
+		"change syntastic's default warning symbol (unicode)
+		let g:syntastic_warning_symbol = "⚑"
 
-	"Tern Settings
+	"Tern Settingis
 		"map TernRename to '\re\'
 		nnoremap <silent><leader>re :TernRename<CR>
 		"map TernRef to '\rf\'
