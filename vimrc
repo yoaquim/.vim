@@ -1,6 +1,6 @@
-"============
-"VIM SETTINGS
-"============
+"=========================
+" VIM SETTINGS & SHORTCUTS
+"=========================
 
 	"Pathogen
 		"pathogen package manager
@@ -36,8 +36,6 @@
 
 	"Folding
 		"define custom folding function (taken from: http://vim.wikia.com/wiki/Customize_text_for_closed_folds)
-		"--START
-		set foldtext=CustomFold()
 		function! CustomFold()
 			let line = getline(v:foldstart)
 			if match( line, '^[ \t]*\(\/\*\|\/\/\)[*/\\]*[ \t]*$' ) == 0
@@ -71,7 +69,10 @@
 			let sub = strpart( sub, 0, winwidth(0) - strlen( info ) - num_w - fold_w - 1 )
 			return sub . info
 		endfunction
-		"--END
+		
+		"set fold method to custom function
+		set foldtext=CustomFold()
+
 		"press space to toggle folding; if no fold, default behavior
 		nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
 		vnoremap <Space> zf
@@ -133,79 +134,96 @@
 	vnoremap ¯ :m '>+1<CR>gv=gv
 	vnoremap ˘ :m '<-2<CR>gv=gv
 
-"===============
-"PLUGIN SETTINGS
-"===============
+"============================
+" PLUGIN SETTINGS & SHORTCUTS
+"============================
 
 	"NerdTree shortcut
 	map <silent><leader>dd :NERDTreeToggle<CR>
 
-	"Remap CtrlP pluging
+	"Remap CtrlP pluging to '\p'
 	let g:ctrlp_map = '<leader>p'
 	let g:ctrlp_cmd = 'CtrlP'
-
-	"Syntastic settings
-		"tell syntastic to use JSHint as checker
-		let g:syntastic_javascript_checkers = ['jshint']
-		"prevent syntastic from populating the loc list with each error it finds
-		let g:syntastic_always_populate_loc_list = 1
-		"dont let location list open up automatically	
-		let g:syntastic_auto_loc_list = 0 
-		"let syntastic check for errors when opening
-		let g:syntastic_check_on_open = 1
-		"don't let syntastic check for errors when exiting (takes too long)
-		let g:syntastic_check_on_wq = 1
-		"change syntastic's default error symbol (unicode)
-		let g:syntastic_error_symbol = "✖"
-		"change error symbol color to match DiffDelete highlight group
-		highlight link SyntasticErrorSign DiffDelete 
-		"change error line highlight color to match Error highlight group
-		highlight link SyntasticErrorLine Error 
-		"change syntastic's default warning symbol (unicode)
-		let g:syntastic_warning_symbol = "⚑"
-
-	"Tern Settingis
-		"map TernRename to '\re\'
-		nnoremap <silent><leader>re :TernRename<CR>
-		"map TernRef to '\rf\'
-		nnoremap <silent><leader>rf :TernRef<CR>
-		"map TernDef to '\df\'
-		nnoremap <silent><leader>df :TernDef<CR>
-		"map TernDoc to '\dc\'
-		nnoremap <silent><leader>dc :TernDoc<CR>
-		"map TernType to '\ty\'
-		nnoremap <silent><leader>ty :TernType<CR>
-
+	
 	"Limelight Shortcut
 	nnoremap <silent><leader>z :Limeligh!!<cr>
 
 	"Sneak - let <s> jump to next occurence of query
 	let g:sneak#s_next = 1
 
+	"Toggle source doc window (taglist.vim plugin)
+	nnoremap <silent><Leader>tt :TlistToggle<CR>
+
+	"Syntastic settings
+		"tell syntastic to use JSHint as checker for Javascript files
+		let g:syntastic_javascript_checkers = ['jshint']
+
+		"prevent syntastic from populating the loc list with each error it finds
+		let g:syntastic_always_populate_loc_list = 1
+
+		"dont let location list open up automatically	
+		let g:syntastic_auto_loc_list = 0 
+
+		"let syntastic check for errors when opening
+		let g:syntastic_check_on_open = 1
+
+		"don't let syntastic check for errors when exiting (takes too long)
+		let g:syntastic_check_on_wq = 1
+
+		"change syntastic's default error symbol (unicode)
+		let g:syntastic_error_symbol = "✖"
+
+		"change error symbol color to match DiffDelete highlight group
+		highlight link SyntasticErrorSign DiffDelete 
+
+		"change error line highlight color to match Error highlight group
+		highlight link SyntasticErrorLine Error 
+
+		"change syntastic's default warning symbol (unicode)
+		let g:syntastic_warning_symbol = "⚑"
+
+	"Tern Settingis
+		"map TernRename to '\re\'
+		nnoremap <silent><leader>re :TernRename<CR>
+
+		"map TernRef to '\rf\'
+		nnoremap <silent><leader>rf :TernRef<CR>
+
+		"map TernDef to '\df\'
+		nnoremap <silent><leader>df :TernDef<CR>
+
+		"map TernDoc to '\dc\'
+		nnoremap <silent><leader>dc :TernDoc<CR>
+
+		"map TernType to '\ty\'
+		nnoremap <silent><leader>ty :TernType<CR>
+
 	"Gimgutter Settings
 		"toggle highlighting for Gitgutter
 		nmap <silent><Leader>gh :GitGutterLineHighlightsToggle<CR>
+
 		"move to next hunk
 		nmap ]h <Plug>GitGutterNextHunk
+
 		"move to previous hunk
 		nmap [h <Plug>GitGutterPrevHunk
+
 		"stage current hunk
 		nmap <Leader>ha <Plug>GitGutterStageHunk
+
 		"unstage current hunk
 		nmap <Leader>hu <Plug>GitGutterRevertHunk
 
 	"YouCompleteMe Settings"
 		"hide YouCompleteMe preview window after selection
 		let g:ycm_autoclose_preview_window_after_completion = 1
+
 "[OFF]		"disable YouCompleteMe C-family checkers, in order to use Syntastic's
 		"let g:ycm_show_diagnostics_ui = 0
 
-	"Toggle source doc window (taglist.vim plugin)
-	nnoremap <silent><Leader>tt :TlistToggle<CR>
-
-"======================
-"COLOR SCHEMES (BASE16)
-"======================
+"=======================
+" COLOR SCHEMES (BASE16)
+"=======================
 
 	"***
 	" The vim colorscheme specified here isn't truly working. The iterm/vim theme is set by changing the bash16-schell script fix, located in .bash_profile.
@@ -224,7 +242,7 @@
 	colorscheme base16-default
 
 "**********************
-"SPECIAL MAP
+" SPECIAL MAP
 "**********************
 	
 	"placed at bottom so no comments will be interpreted after <Esc>
