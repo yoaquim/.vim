@@ -39,10 +39,6 @@
 	set shiftwidth=4
 	set expandtab
 
-	"show tabs
-	" set list!
-	" set listchars=tab:▸\ 
-
 	"Folding
 		"define custom folding function (taken from: http://vim.wikia.com/wiki/Customize_text_for_closed_folds)
 		function! CustomFold()
@@ -157,6 +153,11 @@
 	"Limelight Shortcut
 	nnoremap <silent><leader>z :Limeligh!!<cr>
 
+    "Indent-Guide Settings for odd/even indent colors
+    let g:indent_guides_auto_colors = 0
+    autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd ctermbg=NONE
+    autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=18
+
 	"Sneak - let <s> jump to next occurence of query
 	let g:sneak#s_next = 1
 
@@ -191,7 +192,7 @@
 		"change syntastic's default warning symbol (unicode)
 		let g:syntastic_warning_symbol = "⚑"
 
-	"Tern Settingis
+	"Tern Settings
 		"map TernRename to '\re\'
 		nnoremap <silent><leader>re :TernRename<CR>
 
