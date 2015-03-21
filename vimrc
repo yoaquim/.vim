@@ -35,7 +35,7 @@
 	set incsearch
 
 	"change tab settings to insert 4 spaces
-	set tabstop=4
+	set softtabstop=4
 	set shiftwidth=4
 	set expandtab
 
@@ -155,6 +155,8 @@
 
     "Indent-Guide Settings for odd/even indent colors
     let g:indent_guides_auto_colors = 0
+    let g:indent_guides_start_level=2
+    let g:indent_guides_guide_size=1
     autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd ctermbg=NONE
     autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=18
 
