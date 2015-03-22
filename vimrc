@@ -153,12 +153,12 @@
 	"Limelight Shortcut
 	nnoremap <silent><leader>z :Limeligh!!<cr>
 
-    "Indent-Guide Settings for odd/even indent colors
-    let g:indent_guides_auto_colors = 0
-    let g:indent_guides_start_level=2
-    let g:indent_guides_guide_size=1
-    autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd ctermbg=NONE
-    autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=18
+        "Indent-Guide Settings for odd/even indent colors
+        let g:indent_guides_auto_colors = 0
+        let g:indent_guides_start_level=2
+        let g:indent_guides_guide_size=1
+        autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd ctermbg=NONE
+        autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=18
 
 	"Sneak - let <s> jump to next occurence of query
 	let g:sneak#s_next = 1
