@@ -84,6 +84,7 @@ To finish setting everything up:
 * [Vim JSHint2][15]
 * [Javascript Syntax][16]
 * [Vim-CSS3-Syntax](https://github.com/hail2u/vim-css3-syntax)
+* [Vim-LESS](https://github.com/groenewege/vim-less)
 * [NERDTree][17]
 * [Ctrlp.vim][18]
 * [Vim Node][19]
