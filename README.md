@@ -57,6 +57,7 @@ git submodule foreach git pull origin master
 ```
 To finish setting everything up:
  - [Finish installing JSHint2](#note-on-jshint2)
+ - [Finish installing Vim-LESS](#note-on-vim-less)
  - [Finish installing Taglist](#note-on-taglist)
  - [Finish installing YouCompleteMe](#note-on-youcompleteme)
  - [Set up Color Schemes](#color-schemes)
@@ -101,6 +102,15 @@ To finish setting everything up:
 You need [JSHint](http://jshint.com/) in order for the plugin to work.
 
 You can install it via npm: `sudo npm install -g jshint`.
+
+####Note on Vim-LESS####
+For compiling from less to css, you'll need [lessc](http://lesscss.org/#using-less-installation):
+
+```
+npm install -g less
+```
+
+That also doubles as a [Syntastic checker](https://github.com/scrooloose/syntastic/wiki/LESS%3A---lessc).
 
 ####Note on Taglist####
 Taglist allows you to view source docs for whatever file your working with, and works just like

@@ -82,13 +82,13 @@
 		nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
 		vnoremap <Space> zf
 	
-    "[]: map Alt+j, Alt+k to move up/down 10 lines nnoremap ∆ 10j
+"[]    "map Alt+j, Alt+k to move up/down 10 lines nnoremap ∆ 10j
 	nnoremap ∆ 5j
 	nnoremap ˚ 5k
 	vnoremap ∆ 5j
 	vnoremap ˚ 5k
 
-    "[]: map Shift+Alt+j, Shift+Alt+k to move up/down 20 lines
+"[]    "map Shift+Alt+j, Shift+Alt+k to move up/down 20 lines
 	nnoremap Ô 15j
 	nnoremap  15k
 	vnoremap Ô 15j
@@ -131,7 +131,7 @@
 	vnoremap $q <esc>`>a'<esc>`<i'<esc>
 	vnoremap $e <esc>`>a"<esc>`<i"<esc>
 	
-    "[]: map <Alt+Shift+,> and <Alt+Shift+.>, to move line/visually-selected-code-blocks up and down
+"[]    "map <Alt+Shift+,> and <Alt+Shift+.>, to move line/visually-selected-code-blocks up and down
 	nnoremap ¯ :m .+1<CR>==
 	nnoremap ˘ :m .-2<CR>==
 	inoremap ¯ <Esc>:m .+1<CR>==gi
@@ -150,6 +150,9 @@
 	let g:ctrlp_map = '<leader>p'
 	let g:ctrlp_cmd = 'CtrlP'
 	
+"[x]    "VimLESS map for converting from less to css; lessc is required
+        "noremap <Leader>m :w <BAR> !lessc % > %:t:r.css<CR><space>
+
 	"Limelight Shortcut
 	nnoremap <silent><leader>z :Limeligh!!<cr>
 
@@ -230,7 +233,7 @@
 		"hide YouCompleteMe preview window after selection
 		let g:ycm_autoclose_preview_window_after_completion = 1
 
-		"[x]: disable YouCompleteMe C-family checkers, in order to use Syntastic's
+"[x]            "disable YouCompleteMe C-family checkers, in order to use Syntastic's
 		"let g:ycm_show_diagnostics_ui = 0
 
 "=======================
