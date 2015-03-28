@@ -213,7 +213,7 @@
 		"map TernType to '\ty\'
 		nnoremap <silent><leader>ty :TernType<CR>
 
-	"Gimgutter Settings
+	"Gitgutter Settings
 		"toggle highlighting for Gitgutter
 		nmap <silent><Leader>gh :GitGutterLineHighlightsToggle<CR>
 
