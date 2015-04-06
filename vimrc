@@ -139,6 +139,9 @@
 	vnoremap ¯ :m '>+1<CR>gv=gv
 	vnoremap ˘ :m '<-2<CR>gv=gv
 
+        "map Shift+Tab to go to previous file (Ctrl-O default)
+        nmap <S-Tab> <C-O>  
+
 "============================
 " PLUGIN SETTINGS & SHORTCUTS
 "============================
