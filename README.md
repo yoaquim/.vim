@@ -181,6 +181,8 @@ Again, **this will change your console/iTerm colorscheme also**.
 
 * `:Q` force quits, without saving
 
+* `Shift+Tab` maps to `Ctrl+O`, which goes back to previous view/file
+
 * `Alt+j` jumps 5 lines down (same as `5j`)
 
 * `Alt+k` jumps 5 lines up (same as `5k`)
