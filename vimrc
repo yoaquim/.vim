@@ -14,7 +14,7 @@
 	"syntax highlighting on
 	syntax on
 
-	"change Vim's updatetime setting (mostly for vim-gitgutter plugin)	
+	"change Vim's updatetime setting (mostly for vim-gitgutter plugin)
 	set updatetime=1000
 
 	"if a mouse is present, enable it
@@ -27,7 +27,7 @@
 
 	"show command status
 	set showcmd
-	
+
 	"show line numbers
 	set nu
 
@@ -74,14 +74,14 @@
 			let sub = strpart( sub, 0, winwidth(0) - strlen( info ) - num_w - fold_w - 1 )
 			return sub . info
 		endfunction
-		
+
 		"set fold method to custom function
 		set foldtext=CustomFold()
 
 		"press space to toggle folding; if no fold, default behavior
 		nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
 		vnoremap <Space> zf
-	
+
 "[]    "map Alt+j, Alt+k to move up/down 10 lines nnoremap ∆ 10j
 	nnoremap ∆ 5j
 	nnoremap ˚ 5k
@@ -130,7 +130,7 @@
 	vnoremap $$ <esc>`>a"<esc>`<i"<esc>
 	vnoremap $q <esc>`>a'<esc>`<i'<esc>
 	vnoremap $e <esc>`>a"<esc>`<i"<esc>
-	
+
 "[]    "map <Alt+Shift+,> and <Alt+Shift+.>, to move line/visually-selected-code-blocks up and down
 	nnoremap ¯ :m .+1<CR>==
 	nnoremap ˘ :m .-2<CR>==
@@ -140,7 +140,7 @@
 	vnoremap ˘ :m '<-2<CR>gv=gv
 
         "map Shift+Tab to go to previous file (Ctrl-O default)
-        nmap <S-Tab> <C-O>  
+        nmap <S-Tab> <C-O>
 
 "============================
 " PLUGIN SETTINGS & SHORTCUTS
@@ -149,10 +149,13 @@
 	"NerdTree shortcut
 	map <silent><leader>dd :NERDTreeToggle<CR>
 
+        "Vim Airline settings
+        set laststatus=2
+
 	"Remap CtrlP pluging to '\p'
 	let g:ctrlp_map = '<leader>p'
 	let g:ctrlp_cmd = 'CtrlP'
-	
+
 "[x]    "VimLESS map for converting from less to css; lessc is required
         "noremap <Leader>m :w <BAR> !lessc % > %:t:r.css<CR><space>
 
@@ -179,8 +182,8 @@
 		"prevent syntastic from populating the loc list with each error it finds
 		let g:syntastic_always_populate_loc_list = 1
 
-		"dont let location list open up automatically	
-		let g:syntastic_auto_loc_list = 0 
+		"dont let location list open up automatically
+		let g:syntastic_auto_loc_list = 0
 
 		"let syntastic check for errors when opening
 		let g:syntastic_check_on_open = 1
@@ -192,10 +195,10 @@
 		let g:syntastic_error_symbol = "✖"
 
 		"change error symbol color to match DiffDelete highlight group
-		highlight link SyntasticErrorSign DiffDelete 
+		highlight link SyntasticErrorSign DiffDelete
 
 		"change error line highlight color to match Error highlight group
-		highlight link SyntasticErrorLine Error 
+		highlight link SyntasticErrorLine Error
 
 		"change syntastic's default warning symbol (unicode)
 		let g:syntastic_warning_symbol = "⚑"
@@ -247,10 +250,10 @@
 	" The vim colorscheme specified here isn't truly working. The iterm/vim theme is set by changing the bash16-schell script fix, located in .bash_profile.
 	" Edit the BASE16_SHELL variable in order to change the actual terminal/iterm AND vim colorscheme.
 	"***
-	
+        "
 	"access colors present in 256 colorspace (since iTerm is using xterm-256)
-	let base16colorspace=256  
-	
+	let base16colorspace=256
+
 	"use dark variant, instead of light
 	"* doesn't do anything, but here for consistency
 	set background=dark
@@ -262,7 +265,7 @@
 "**********************
 " SPECIAL MAP
 "**********************
-	
+
 	"placed at bottom so no comments will be interpreted after <Esc>
 	"remaps <Esc> key to jk (need to be typed quickly)
 	inoremap jk <Esc>
