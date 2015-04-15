@@ -93,6 +93,7 @@ To finish setting everything up:
 * [Vim Gitgutter][5]
 * [Vim Sneak][24]
 * [Vim Repeat][25]
+* [Vim Unimpaired](https://github.com/tpope/vim-unimpaired)
 * [Vim Surround][26]
 * [Split Join][27]
 * [Taglist][7]
