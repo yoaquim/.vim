@@ -66,6 +66,7 @@ To finish setting everything up:
 
 * Load plugin files for file types
 * Load indent files for file types
+* Set tabs to be 4 spaces: `set softtabstop=4 set shiftwidth=4 set expandtab`
 * Syntax Highlighting on
 * Set `updatetime` to 1000 milliseconds
 * Set `backspace` to act as expected
