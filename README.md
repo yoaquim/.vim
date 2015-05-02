@@ -82,7 +82,7 @@ To finish setting everything up:
 * [Limelight][11]
 * [Vim Commentary][12]
 * [Syntastic][13]
-* [Vim Autoclose][14]
+* [delimitMate][14]
 * [Vim JSHint2][15]
 * [Javascript Syntax][16]
 * [Vim-CSS3-Syntax](https://github.com/hail2u/vim-css3-syntax)
@@ -219,7 +219,7 @@ Again, **this will change your console/iTerm colorscheme also**.
 [11]:https://github.com/junegunn/limelight.vim
 [12]:https://github.com/tpope/vim-commentary
 [13]:https://github.com/scrooloose/syntastic
-[14]:https://github.com/Townk/vim-autoclose
+[14]:https://github.com/Raimondi/delimitMate
 [15]:https://github.com/Shutnik/jshint2.vim
 [16]:https://github.com/jelera/vim-javascript-syntax
 [17]:https://github.com/scrooloose/nerdtree
