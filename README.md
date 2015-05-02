@@ -84,7 +84,6 @@ To finish setting everything up:
 * [Syntastic][13]
 * [delimitMate][14]
 * [Vim JSHint2][15]
-* [Vim Javascript][16]
 * [Javascript Syntax](https://github.com/jelera/vim-javascript-syntax)
 * [Vim-CSS3-Syntax](https://github.com/hail2u/vim-css3-syntax)
 * [Vim-LESS](https://github.com/groenewege/vim-less)
@@ -222,7 +221,6 @@ Again, **this will change your console/iTerm colorscheme also**.
 [13]:https://github.com/scrooloose/syntastic
 [14]:https://github.com/Raimondi/delimitMate
 [15]:https://github.com/Shutnik/jshint2.vim
-[16]:https://github.com/pangloss/vim-javascript
 [17]:https://github.com/scrooloose/nerdtree
 [18]:https://github.com/kien/ctrlp.vim
 [19]:https://github.com/moll/vim-node
