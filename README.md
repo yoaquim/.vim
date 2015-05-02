@@ -84,7 +84,8 @@ To finish setting everything up:
 * [Syntastic][13]
 * [delimitMate][14]
 * [Vim JSHint2][15]
-* [Javascript Syntax][16]
+* [Vim Javascript][16]
+* [Javascript Syntax](https://github.com/jelera/vim-javascript-syntax)
 * [Vim-CSS3-Syntax](https://github.com/hail2u/vim-css3-syntax)
 * [Vim-LESS](https://github.com/groenewege/vim-less)
 * [NERDTree][17]
