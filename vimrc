@@ -146,6 +146,9 @@
 " PLUGIN SETTINGS & SHORTCUTS
 "============================
 
+        "delimitMate settings to insert linebreak on brackets
+        let delimitMate_expand_cr=1
+
 	"NerdTree shortcut
 	map <silent><leader>dd :NERDTreeToggle<CR>
 
