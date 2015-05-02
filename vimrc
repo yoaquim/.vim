@@ -146,8 +146,11 @@
 " PLUGIN SETTINGS & SHORTCUTS
 "============================
 
+        "Javascript highlighting:enables HTML/CSS highlighting in javascript
+        let g:javascript_enable_domhtmlcss=1
+                
         "delimitMate settings to insert linebreak on brackets
-        let delimitMate_expand_cr=1
+        let g:delimitMate_expand_cr=1
 
 	"NerdTree shortcut
 	map <silent><leader>dd :NERDTreeToggle<CR>

@@ -22,9 +22,6 @@
 [submodule "bundle/vim-commentary"]
 	path = bundle/vim-commentary
 	url = https://github.com/tpope/vim-commentary.git
-[submodule "bundle/vim-javascript-syntax"]
-	path = bundle/vim-javascript-syntax
-	url = https://github.com/jelera/vim-javascript-syntax.git
 [submodule "bundle/vim-sneak"]
 	path = bundle/vim-sneak
 	url = git://github.com/justinmk/vim-sneak.git
@@ -71,3 +68,6 @@
 [submodule "bundle/delimitMate"]
 	path = bundle/delimitMate
 	url = https://github.com/Raimondi/delimitMate.git
+[submodule "vim-javascript"]
+	path = vim-javascript
+	url = https://github.com/pangloss/vim-javascript.git

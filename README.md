@@ -221,7 +221,7 @@ Again, **this will change your console/iTerm colorscheme also**.
 [13]:https://github.com/scrooloose/syntastic
 [14]:https://github.com/Raimondi/delimitMate
 [15]:https://github.com/Shutnik/jshint2.vim
-[16]:https://github.com/jelera/vim-javascript-syntax
+[16]:https://github.com/pangloss/vim-javascript
 [17]:https://github.com/scrooloose/nerdtree
 [18]:https://github.com/kien/ctrlp.vim
 [19]:https://github.com/moll/vim-node
