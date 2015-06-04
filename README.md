@@ -204,7 +204,7 @@ Again, **this will change your console/iTerm colorscheme also**.
 
 * Easier window navigation: `Ctrl+h`, `Ctrl+j`,`Ctrl+k`, `Ctrl+l` for left, down, up & right, respectively
 
-* `\\` turns selected lines into folded code block if in visual mode; toggles fold in normal mode
+* `\\` in normal mode turns selected lines into folded code block; toggles fold in normal mode
 
 * `Space` acts as leader (`\` by default) key. That also allows you to:
 
