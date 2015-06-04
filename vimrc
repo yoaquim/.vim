@@ -142,9 +142,31 @@
         "map Shift+Tab to go to previous file (Ctrl-O default)
         nmap <S-Tab> <C-O>
 
+        "set <Space> as leader key
+        let mapleader = "\<Space>"
+
+        "let <Space>w save a file (alias to :w)
+        nnoremap <Leader>w :w<CR>
+
+        "copy & paste to system clipboard with <Space>p and <Space>y
+        vmap <Leader>y "+y
+        vmap <Leader>d "+d
+        nmap <Leader>p "+p
+        nmap <Leader>P "+P
+        vmap <Leader>p "+p
+        vmap <Leader>P "+P
+
+        "enter visual line mode with <Space><Space>
+        nmap <Leader><Leader> V
+
 "============================
 " PLUGIN SETTINGS & SHORTCUTS
 "============================
+        
+        "Vim-Expand-Region keymappings to selecte incrementing regions with
+        "each `v` press; undo with Ctrl+v
+        vmap v <Plug>(expand_region_expand)
+        vmap <C-v> <Plug>(expand_region_shrink)
 
         "Javascript highlighting:enables HTML/CSS highlighting in javascript
         let g:javascript_enable_domhtmlcss=1

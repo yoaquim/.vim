@@ -15,7 +15,7 @@ You're gonna need [npm][2] (comes bundled with [Node.js][2]) for some plugins.
 
 And I seriously recommend getting [Homebrew][3], if you haven't already - makes all the extra steps, and installing in general, super easy.
 
-I use [Homebrew][3]'s vim: 
+I use [Homebrew][3]'s vim:
 
 ```Shell
 brew install vim
@@ -37,7 +37,7 @@ git clone https://github.com/yoaquim/.vim.git ~/.vim
 ```
 
 You're gonna wanna syslink the `vimrc` file to your actual `~/.vimrc`:
-			
+
 ```Shell
 ln -s ~/.vim/vimrc ~/.vimrc
 ```
@@ -131,7 +131,7 @@ Setting it up takes some extra steps ([head to their site][29] for the full inst
 
 1. Make sure that your version of Vim is at least 7.3.584 and that it has support for python2 scripting. If you installed homebrew's mavcim version - referenced at the beginning - you're good.
 
-2. Install [cmake][30]. If you have homebrew, you can just do `brew install cmake`.  
+2. Install [cmake][30]. If you have homebrew, you can just do `brew install cmake`.
 
 3. Compile YCM support libraries:
 
@@ -202,6 +202,14 @@ Again, **this will change your console/iTerm colorscheme also**.
 * Highlight search: `\h\h` first time you open a file; afterwards, toggle by pressing `\h`
 
 * Easier window navigation: `Ctrl+h`, `Ctrl+j`,`Ctrl+k`, `Ctrl+l` for left, down, up & right, respectively
+
+* `Space` acts as leader (`\` by default) key. That also allows you to:
+
+  * `Space w` saves the file (alias to `:w`)
+
+  * You can copy/paste to system clipboard with `<Space> p`, `<Space> d` and `<Space> y`
+
+  * Enter visual line mode with `<Space><Space>`
 
 * Wrap selection in brackets, parenthesis, etc. (view vimrc starting at line 68)
 
