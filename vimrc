@@ -79,8 +79,19 @@
 		set foldtext=CustomFold()
 
 		"press space to toggle folding; if no fold, default behavior
-		nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
-		vnoremap <Space> zf
+		nnoremap <silent>\\ @=(foldlevel('.')?'za':"\<Space>")<CR>
+		vnoremap \\ zf
+
+        "set <Space> as Leader key
+        let mapleader = "\<Space>"
+
+        "save file (alias of :w<Enter>), also alias to W command
+        nnoremap <Leader>w :w<CR>
+        nnoremap <Leader>W :W<CR>
+
+        "quit file (alias of :q<Enter>), also alias to Q command
+        nnoremap <Leader>q :q<CR>
+        nnoremap <Leader>Q :Q<CR>
 
 "[]    "map Alt+j, Alt+k to move up/down 10 lines nnoremap ∆ 10j
 	nnoremap ∆ 5j
@@ -101,14 +112,14 @@
 	command W execute "w !sudo tee % >/dev/null"
 
 	"close preview windows
-	inoremap <silent><leader>xp :pc <CR>
-	nnoremap <silent><leader>xp :pc <CR>
-	vnoremap <silent><leader>xp :pc <CR>
+	inoremap <silent><Leader>xp :pc <CR>
+	nnoremap <silent><Leader>xp :pc <CR>
+	vnoremap <silent><Leader>xp :pc <CR>
 
 	"close location list
-	inoremap <silent><leader>xl :lclose <CR>
-	nnoremap <silent><leader>xl :lclose <CR>
-	vnoremap <silent><leader>xl :lclose <CR>
+	inoremap <silent><Leader>xl :lclose <CR>
+	nnoremap <silent><Leader>xl :lclose <CR>
+	vnoremap <silent><Leader>xl :lclose <CR>
 
 	"set '\h' to toggle search highlight
 	let hlstate=0
@@ -121,7 +132,7 @@
 	map <C-l> <C-W>l
 
 	"toggle spell checking
-	map <leader>ss :setlocal spell!<cr>
+	map \s :setlocal spell!<cr>
 
 	"surround visual selection with brackets, parenthesis, etc.
 	vnoremap $1 <esc>`>a)<esc>`<i(<esc>
@@ -141,15 +152,6 @@
 
         "map Shift+Tab to go to previous file (Ctrl-O default)
         nmap <S-Tab> <C-O>
-
-        "set <Space> as leader key
-        let mapleader = "\<Space>"
-
-        "let <Space>w save a file (alias to :w)
-        nnoremap <Leader>w :w<CR>
-
-        "let <Space>q quit vim (alias to :q)
-        nnoremap <Leader>q :q<CR>
 
         "copy & paste to system clipboard with <Space>p and <Space>y
         vmap <Leader>y "+y
@@ -178,20 +180,29 @@
         let g:delimitMate_expand_cr=1
 
 	"NerdTree shortcut
-	map <silent><leader>dd :NERDTreeToggle<CR>
+	map <silent><Leader>f :NERDTreeToggle<CR>
 
         "Vim Airline settings
         set laststatus=2
 
-	"Remap CtrlP pluging to '\p'
-	let g:ctrlp_map = '<leader>p'
-	let g:ctrlp_cmd = 'CtrlP'
+        "Let CtrlP use git for searching inside Git projects
+        let g:ctrlp_use_caching = 0
+        if executable('ag')
+            set grepprg=ag\ --nogroup\ --nocolor
+
+            let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+        else
+            let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . -co --exclude-standard', 'find %s -type f']
+            let g:ctrlp_prompt_mappings = {
+                        \ 'AcceptSelection("e")': ['<space>', '<cr>', '<2-LeftMouse>'],
+                        \ }
+        endif
 
 "[x]    "VimLESS map for converting from less to css; lessc is required
         "noremap <Leader>m :w <BAR> !lessc % > %:t:r.css<CR><space>
 
 	"Limelight Shortcut
-	nnoremap <silent><leader>z :Limeligh!!<cr>
+	nnoremap <silent><Leader>z :Limeligh!!<cr>
 
         "Indent-Guide Settings for odd/even indent colors
         let g:indent_guides_auto_colors = 0
@@ -237,19 +248,19 @@
 
 	"Tern Settings
 		"map TernRename to '\re\'
-		nnoremap <silent><leader>re :TernRename<CR>
+		nnoremap <silent><Leader>re :TernRename<CR>
 
 		"map TernRef to '\rf\'
-		nnoremap <silent><leader>rf :TernRef<CR>
+		nnoremap <silent><Leader>rf :TernRef<CR>
 
 		"map TernDef to '\df\'
-		nnoremap <silent><leader>df :TernDef<CR>
+		nnoremap <silent><Leader>df :TernDef<CR>
 
 		"map TernDoc to '\dc\'
-		nnoremap <silent><leader>dc :TernDoc<CR>
+		nnoremap <silent><Leader>dc :TernDoc<CR>
 
 		"map TernType to '\ty\'
-		nnoremap <silent><leader>ty :TernType<CR>
+		nnoremap <silent><Leader>ty :TernType<CR>
 
 	"Gitgutter Settings
 		"toggle highlighting for Gitgutter
@@ -282,7 +293,7 @@
 	" The vim colorscheme specified here isn't truly working. The iterm/vim theme is set by changing the bash16-schell script fix, located in .bash_profile.
 	" Edit the BASE16_SHELL variable in order to change the actual terminal/iterm AND vim colorscheme.
 	"***
-        "
+
 	"access colors present in 256 colorspace (since iTerm is using xterm-256)
 	let base16colorspace=256
 

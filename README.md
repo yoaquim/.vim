@@ -198,17 +198,19 @@ Again, **this will change your console/iTerm colorscheme also**.
 
 * `Alt+Shift+,` moves the current line down (can also be used in visual mode when selecting blocks/paragraphs)
 
-* Spell checking: `\ss`
+* Spell checking: `\s`
 
 * Highlight search: `\h\h` first time you open a file; afterwards, toggle by pressing `\h`
 
 * Easier window navigation: `Ctrl+h`, `Ctrl+j`,`Ctrl+k`, `Ctrl+l` for left, down, up & right, respectively
 
+* `\\` turns selected lines into folded code block if in visual mode; toggles fold in normal mode
+
 * `Space` acts as leader (`\` by default) key. That also allows you to:
 
-  * `Space w` saves the file (alias to `:w`)
+  * `Space w` saves the file (alias to `:w`); also works with `:W` version
 
-  * `Space q` quits vim (alias to `:q`)
+  * `Space q` quits vim (alias to `:q`); also works with `:Q` version
 
   * You can copy/paste to system clipboard with `<Space> p`, `<Space> d` and `<Space> y`
 
