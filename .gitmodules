@@ -37,6 +37,7 @@
 [submodule "bundle/YouCompleteMe"]
 	path = bundle/YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe.git
+        ignore = dirty
 [submodule "bundle/base16-vim"]
 	path = bundle/base16-vim
 	url = https://github.com/chriskempson/base16-vim.git
@@ -74,3 +75,4 @@
 [submodule "bundle/vim-expand-region"]
 	path = bundle/vim-expand-region
 	url = https://github.com/terryma/vim-expand-region.git
+        ignore = dirty

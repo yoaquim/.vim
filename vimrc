@@ -148,6 +148,9 @@
         "let <Space>w save a file (alias to :w)
         nnoremap <Leader>w :w<CR>
 
+        "let <Space>q quit vim (alias to :q)
+        nnoremap <Leader>q :q<CR>
+
         "copy & paste to system clipboard with <Space>p and <Space>y
         vmap <Leader>y "+y
         vmap <Leader>d "+d
@@ -162,7 +165,7 @@
 "============================
 " PLUGIN SETTINGS & SHORTCUTS
 "============================
-        
+
         "Vim-Expand-Region keymappings to selecte incrementing regions with
         "each `v` press; undo with Ctrl+v
         vmap v <Plug>(expand_region_expand)
@@ -170,7 +173,7 @@
 
         "Javascript highlighting:enables HTML/CSS highlighting in javascript
         let g:javascript_enable_domhtmlcss=1
-                
+
         "delimitMate settings to insert linebreak on brackets
         let g:delimitMate_expand_cr=1
 

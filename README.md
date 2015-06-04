@@ -95,6 +95,7 @@ To finish setting everything up:
 * [Vim Sneak][24]
 * [Vim Repeat][25]
 * [Vim Unimpaired](https://github.com/tpope/vim-unimpaired)
+* [Vim Expand Region](https://github.com/terryma/vim-expand-region)
 * [Vim Surround][26]
 * [Split Join][27]
 * [Taglist][7]
@@ -207,13 +208,15 @@ Again, **this will change your console/iTerm colorscheme also**.
 
   * `Space w` saves the file (alias to `:w`)
 
+  * `Space q` quits vim (alias to `:q`)
+
   * You can copy/paste to system clipboard with `<Space> p`, `<Space> d` and `<Space> y`
 
   * Enter visual line mode with `<Space><Space>`
 
-* Wrap selection in brackets, parenthesis, etc. (view vimrc starting at line 68)
+* Wrap selection in brackets, parenthesis, etc. (view vimrc)
 
-* Shortcuts for plugins (view vimrc starting at line 88)
+* Shortcuts for plugins (view vimrc)
 
 [1]:https://github.com/amix/vimrc
 [2]:http://nodejs.org/
