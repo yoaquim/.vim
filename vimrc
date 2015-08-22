@@ -222,8 +222,7 @@
 		let g:syntastic_javascript_checkers = ['jshint']
                 "let syntastic ignore missing 'use strict' error, require not
                 "defined and module not defined warnings
-                let g:syntastic_javascript_jshint_quiet_messages = { 'regex': '\VMissing "use strict" statement.' }
-                let g:syntastic_javascript_jshint_quiet_messages = { 'regex': ["'module' is not defined.", "'require' is not defined."]}
+                let g:syntastic_javascript_jshint_quiet_messages = { 'regex': [ '\VMissing "use strict" statement.',    "'module' is not defined.",     "'require' is not defined.",    "'__dirname' is not defined."]}
 
 		"prevent syntastic from populating the loc list with each error it finds
 		let g:syntastic_always_populate_loc_list = 1
