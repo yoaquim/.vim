@@ -76,3 +76,6 @@
 	path = bundle/vim-expand-region
 	url = https://github.com/terryma/vim-expand-region.git
         ignore = dirty
+[submodule "bundle/vim-vagrant"]
+	path = bundle/vim-vagrant
+	url = https://github.com/markcornick/vim-vagrant.git
