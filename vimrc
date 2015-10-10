@@ -185,6 +185,12 @@
         "Vim Airline settings
         set laststatus=2
 
+        "Ag settings
+            "Start searching from project dir, instead of CWD
+            let g:ag_working_path_mode="r"
+            " Highlight search term
+            let g:ag_highlight=1
+
         "Let CtrlP use git for searching inside Git projects
         let g:ctrlp_use_caching = 0
         if executable('ag')
