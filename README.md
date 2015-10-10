@@ -88,6 +88,7 @@ To finish setting everything up:
 * [Vim-CSS3-Syntax](https://github.com/hail2u/vim-css3-syntax)
 * [Vim-LESS](https://github.com/groenewege/vim-less)
 * [NERDTree][17]
+* [NERDTree Git Plugin](https://github.com/Xuyuanp/nerdtree-git-plugin)
 * [Ctrlp.vim][18]
 * [Vim Node][19]
 * [Vim Fugitive](https://github.com/tpope/vim-fugitive)
