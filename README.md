@@ -56,6 +56,7 @@ If you ever need to update the plugin modules, just do:
 git submodule foreach git pull origin master
 ```
 To finish setting everything up:
+ - [Finish installing Ag](#note-on-ag)
  - [Finish installing JSHint2](#note-on-jshint2)
  - [Finish installing Vim-LESS](#note-on-vim-less)
  - [Finish installing Taglist](#note-on-taglist)
