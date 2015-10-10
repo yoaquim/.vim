@@ -82,6 +82,7 @@ To finish setting everything up:
 * [Limelight][11]
 * [Vim Commentary][12]
 * [Syntastic][13]
+* [Ag](https://github.com/rking/ag.vim)
 * [delimitMate][14]
 * [Vim JSHint2][15]
 * [Javascript Syntax](https://github.com/jelera/vim-javascript-syntax)
