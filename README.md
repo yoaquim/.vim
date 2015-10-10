@@ -103,6 +103,11 @@ To finish setting everything up:
 * [Taglist][7]
 * [YouCompleteMe][28]
 
+####Note on Ag####
+You need [The Silver Searcher](https://github.com/ggreer/the_silver_searcher) in order for the plugin to work.
+
+You can install it via homebrew: `brew install the_silver_searcher`.
+
 ####Note on JSHint2####
 You need [JSHint](http://jshint.com/) in order for the plugin to work.
 
