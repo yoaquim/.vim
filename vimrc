@@ -93,13 +93,13 @@
         nnoremap <Leader>q :q<CR>
         nnoremap <Leader>Q :Q<CR>
 
-"[]    "map Alt+j, Alt+k to move up/down 10 lines nnoremap ∆ 10j
+       "map Alt+j, Alt+k to move up/down 10 lines nnoremap ∆ 10j
 	nnoremap ∆ 5j
 	nnoremap ˚ 5k
 	vnoremap ∆ 5j
 	vnoremap ˚ 5k
 
-"[]    "map Shift+Alt+j, Shift+Alt+k to move up/down 20 lines
+       "map Shift+Alt+j, Shift+Alt+k to move up/down 20 lines
 	nnoremap Ô 15j
 	nnoremap  15k
 	vnoremap Ô 15j
