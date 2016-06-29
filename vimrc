@@ -292,24 +292,11 @@
 		"let g:ycm_show_diagnostics_ui = 0
 
 "=======================
-" COLOR SCHEMES (BASE16)
+" COLOR SCHEMES 
 "=======================
-
-	"***
-	" The vim colorscheme specified here isn't truly working. The iterm/vim theme is set by changing the bash16-schell script fix, located in .bash_profile.
-	" Edit the BASE16_SHELL variable in order to change the actual terminal/iterm AND vim colorscheme.
-	"***
-
-	"access colors present in 256 colorspace (since iTerm is using xterm-256)
+"
+	"access colors present in 256 colorspace for base16 (since iTerm is using xterm-256)
 	let base16colorspace=256
-
-	"use dark variant, instead of light
-	"* doesn't do anything, but here for consistency
-	set background=dark
-
-	"base16 color scheme
-	"* doesn't really change color, but if not here, messes up colorscheme
-	colorscheme base16-default
 
 "**********************
 " SPECIAL MAP
