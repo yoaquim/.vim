@@ -298,6 +298,9 @@
 	"access colors present in 256 colorspace for base16 (since iTerm is using xterm-256)
 	let base16colorspace=256
 
+        "set colorscheme to be base16 default in order to apply base16 colors from terminal
+        colorscheme base16-default-dark
+
 "**********************
 " SPECIAL MAP
 "**********************
