@@ -176,11 +176,11 @@ the console's/iTerm's colorscheme via [base16-shell's option][32] that lives in 
 in order to change Vim's colorscheme:
 
 ```
-BASE16_SHELL="$HOME/.config/base16-shell/*CHOOSE_COLOR_SCHEME*.sh"
+BASE16_SHELL="$HOME/.config/base16-shell/scripts/*CHOOSE_COLOR_SCHEME*.sh"
 [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL ]]
 ```
 
-So if you want the dark base16-ocean theme for example, you'd do `.../base16-shell/base16-ocean.dark.sh...`.
+So if you want the dark base16-ocean theme for example, you'd do `.../base16-shell/scripts/base16-ocean.sh...`.
 
 Again, **this will change your console/iTerm colorscheme also**.
 
