@@ -114,9 +114,6 @@
 
 	"create command 'W' to save file as sudo; need to press Enter twice
 	command W execute "w !sudo tee % >/dev/null"
-        "
-	"create command 'X' to save file (and quit) as sudo; need to press Enter twice
-	command X execute "x !sudo tee % >/dev/null"
 
 	"close preview windows
 	inoremap <silent><Leader>xp :pc <CR>
