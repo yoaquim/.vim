@@ -92,6 +92,10 @@
         "quit file (alias of :q<Enter>), also alias to Q command
         nnoremap <Leader>q :q<CR>
         nnoremap <Leader>Q :Q<CR>
+        
+        "save & quit file (alias of :x<Enter>), also alias to X command
+        nnoremap <Leader>x :x<CR>
+        nnoremap <Leader>X :X<CR>
 
        "map Alt+j, Alt+k to move up/down 10 lines nnoremap ∆ 10j
 	nnoremap ∆ 5j
@@ -110,6 +114,9 @@
 
 	"create command 'W' to save file as sudo; need to press Enter twice
 	command W execute "w !sudo tee % >/dev/null"
+        "
+	"create command 'X' to save file (and quit) as sudo; need to press Enter twice
+	command X execute "x !sudo tee % >/dev/null"
 
 	"close preview windows
 	inoremap <silent><Leader>xp :pc <CR>
