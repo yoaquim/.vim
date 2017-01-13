@@ -28,6 +28,14 @@ export PATH="/usr/local/bin:$PATH"
 echo $PATH
 ```
 
+###Prerequisites###
+
+The [Ag](https://github.com/rking/ag.vim) plugins needs [The Silver Searcher](https://github.com/ggreer/the_silver_searcher) in order to work:
+
+```
+brew install the_silver_searcher
+```
+
 ###Installation###
 
 To install:
@@ -55,13 +63,6 @@ If you ever need to update the plugin modules, just do:
 ```Shell
 git submodule foreach git pull origin master
 ```
-To finish setting everything up:
- - [Finish installing Ag](#note-on-ag)
- - [Finish installing JSHint2](#note-on-jshint2)
- - [Finish installing Vim-LESS](#note-on-vim-less)
- - [Finish installing Taglist](#note-on-taglist)
- - [Finish installing YouCompleteMe](#note-on-youcompleteme)
- - [Set up Color Schemes](#color-schemes)
 
 ###Settings###
 
@@ -85,10 +86,8 @@ To finish setting everything up:
 * [Syntastic][13]
 * [Ag](https://github.com/rking/ag.vim)
 * [delimitMate][14]
-* [Vim JSHint2][15]
 * [Javascript Syntax](https://github.com/jelera/vim-javascript-syntax)
 * [Vim-CSS3-Syntax](https://github.com/hail2u/vim-css3-syntax)
-* [Vim-LESS](https://github.com/groenewege/vim-less)
 * [NERDTree][17]
 * [NERDTree Git Plugin](https://github.com/Xuyuanp/nerdtree-git-plugin)
 * [Ctrlp.vim][18]
@@ -101,73 +100,10 @@ To finish setting everything up:
 * [Vim Expand Region](https://github.com/terryma/vim-expand-region)
 * [Vim Surround][26]
 * [Split Join][27]
-* [Taglist][7]
-* [YouCompleteMe][28]
-
-####Note on Ag####
-You need [The Silver Searcher](https://github.com/ggreer/the_silver_searcher) in order for the plugin to work.
-
-You can install it via homebrew: `brew install the_silver_searcher`.
-
-####Note on JSHint2####
-You need [JSHint](http://jshint.com/) in order for the plugin to work.
-
-You can install it via npm: `sudo npm install -g jshint`.
-
-####Note on Vim-LESS####
-For compiling from less to css, you'll need [lessc](http://lesscss.org/#using-less-installation):
-
-```
-npm install -g less
-```
-
-That also doubles as a [Syntastic checker](https://github.com/scrooloose/syntastic/wiki/LESS%3A---lessc).
-
-####Note on Taglist####
-Taglist allows you to view source docs for whatever file your working with, and works just like
-Vim's tags/helptags.
-
-It needs [Exuberant Ctags][8] to work, but hombrew makes that easy: `brew install ctags-exuberant`.
-
-After that, navigate to your .vim dir, open vim and run the helptags command for the current dir: `:helptags .`.
-
-You can then run `:TlistToggle` to show the source doc window, or just do `<leader>tt`, a custom mapping I have for that command.
-
-####Note on YouCompleteMe####
-YouCompleteMe is a very powerful code-completion engine.
-
-Setting it up takes some extra steps ([head to their site][29] for the full instructions):
-
-1. Make sure that your version of Vim is at least 7.3.584 and that it has support for python2 scripting. If you installed homebrew's mavcim version - referenced at the beginning - you're good.
-
-2. Install [cmake][30]. If you have homebrew, you can just do `brew install cmake`.
-
-3. Compile YCM support libraries:
-
-```
-cd ~
-mkdir ycm_build
-cd ycm_build
-
-cmake -G "Unix Makefiles" . ~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp
-
-make ycm_support_libs
-```
-**These steps won't include support for C family languages**.
-
-If you want that, go check out the full instructions.
-
-#####Tern Support#####
-
-[YouCompleteMe][28] doesn't come with support for Javascript out of the box - it does scan the current file for things you've typed, but no pure JS support.
-
-Luckily, [Tern][10] provides an omni-completion function that YCM can hook into; this offers really good, native Javascript completion.
 
 ###Color Schemes###
 
 I'm using base16 color schemes for vim: [base16-vim][20].
-
-I'm also using [iTerm2][21], and so I needed [base16 for iTerm2][22].
 
 If you want to use a 256 colorspace, you'll need to add the [base16-shell][31] fix.
 
