@@ -206,9 +206,6 @@
                         \ }
         endif
 
-"[x]    "VimLESS map for converting from less to css; lessc is required
-        "noremap <Leader>m :w <BAR> !lessc % > %:t:r.css<CR><space>
-
 	"Limelight Shortcut
 	nnoremap <silent><Leader>z :Limeligh!!<cr>
 
@@ -287,13 +284,6 @@
 
 		"unstage current hunk
 		nmap <Leader>hu <Plug>GitGutterRevertHunk
-
-	"YouCompleteMe Settings"
-		"hide YouCompleteMe preview window after selection
-		let g:ycm_autoclose_preview_window_after_completion = 1
-
-"[x]            "disable YouCompleteMe C-family checkers, in order to use Syntastic's
-		"let g:ycm_show_diagnostics_ui = 0
 
 "=======================
 " COLOR SCHEMES 
