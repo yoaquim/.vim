@@ -105,15 +105,16 @@ git submodule foreach git pull origin master
 
 I'm using base16 color schemes for vim: [base16-vim][20].
 
-If you want to use a 256 colorspace, you'll need to add the [base16-shell][31] fix.
-
 Since console Vim can only access colorschemes available to the console/iTerm2, you have to change
-the console's/iTerm's colorscheme via [base16-shell's option][32] that lives in your `.bash_profile`,
+the console's/iTerm's colorscheme via [base16-shell][32]'s helper command, that lives in your `.bash_profile`,
 in order to change Vim's colorscheme:
 
 ```
-BASE16_SHELL="$HOME/.config/base16-shell/scripts/*CHOOSE_COLOR_SCHEME*.sh"
-[[ -s $BASE16_SHELL ]] && source $BASE16_SHELL ]]
+# Base16 Shell
+BASE16_SHELL="$HOME/.config/base16-shell/"
+[ -n "$PS1" ] && \
+    [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
+        eval "$("$BASE16_SHELL/profile_helper.sh")"
 ```
 
 So if you want the dark base16-ocean theme for example, you'd do `.../base16-shell/scripts/base16-ocean.sh...`.
