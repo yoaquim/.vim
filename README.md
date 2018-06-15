@@ -1,5 +1,5 @@
-#Custom Vim Config#
-###Intro###
+# Custom Vim Config
+### Intro
 
 This vim configuartion is based off of amix's [Ultimate vimrc][1].
 
@@ -28,7 +28,7 @@ export PATH="/usr/local/bin:$PATH"
 echo $PATH
 ```
 
-###Prerequisites###
+### Prerequisites
 
 The [Ag](https://github.com/rking/ag.vim) plugins needs [The Silver Searcher](https://github.com/ggreer/the_silver_searcher) in order to work:
 
@@ -36,7 +36,7 @@ The [Ag](https://github.com/rking/ag.vim) plugins needs [The Silver Searcher](ht
 brew install the_silver_searcher
 ```
 
-###Installation###
+### Installation
 
 To install:
 
@@ -64,7 +64,7 @@ If you ever need to update the plugin modules, just do:
 git submodule foreach git pull origin master
 ```
 
-###Settings###
+### Settings
 
 * Load plugin files for file types
 * Load indent files for file types
@@ -77,7 +77,7 @@ git submodule foreach git pull origin master
 * Enable line numbers
 * Enable incremental search (search matches as you type)
 
-###Plugins###
+### Plugins
 
 * [Airline][6]
 * [Tern for Vim][10]
@@ -101,7 +101,7 @@ git submodule foreach git pull origin master
 * [Vim Surround][26]
 * [Split Join][27]
 
-###Color Schemes###
+### Color Schemes
 
 I'm using base16 color schemes for vim: [base16-vim][20].
 
@@ -120,7 +120,7 @@ So if you want the dark base16-ocean theme for example, you'd do `.../base16-she
 
 Again, **this will change your console/iTerm colorscheme also**.
 
-###Some shortcuts...###
+### Some shortcuts...
 
 * Quickly type `jk` to go to Normal Mode - mapped to `Esc`('jk' is a rare diagraph in English and you can always wait between typing both chars if you ever need to insert them)
 
